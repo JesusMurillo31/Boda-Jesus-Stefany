@@ -18,9 +18,6 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    background:hsl(197, 71%, 73%);
-    color:white;
 }
 
 .portada h1{

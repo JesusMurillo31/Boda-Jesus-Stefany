@@ -18,10 +18,11 @@ body{
     padding-top: 180px;
     padding-left: 20px;
     padding-right: 20px;
-    background-image: url("https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/FondoCabezera.jpeg");
+    background-color: #87CEEB;
+    /*background-image: url("https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/FondoCabezera.jpeg");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: top center;*/
 }
 
 /* MÓVIL: ajusta escala y espacio */

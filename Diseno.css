@@ -1,0 +1,80 @@
+body{
+margin:0;
+font-family: Arial, sans-serif;
+text-align:center;
+background:#fafafa;
+}
+
+/* PORTADA */
+
+.portada{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:#87CEEB;
+color:white;
+}
+
+.portada h1{
+font-size:50px;
+margin:10px;
+}
+
+.portada p{
+font-size:20px;
+}
+
+/* SECCIONES */
+
+.section{
+padding:60px 20px;
+}
+
+/* CUADROS PARA IMAGEN */
+
+.img-placeholder{
+width:300px;
+height:200px;
+background:#87CEEB;
+margin:auto;
+border-radius:10px;
+}
+
+/* GALERIA */
+
+.galeria{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.galeria .img-placeholder{
+width:200px;
+height:200px;
+}
+
+/* EVENTO */
+
+.evento{
+background:white;
+padding:40px;
+border-radius:10px;
+max-width:500px;
+margin:auto;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* BOTON */
+
+.boton{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#000;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}

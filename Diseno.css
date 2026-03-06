@@ -32,17 +32,19 @@ font-size:20px;
 padding:60px 20px;
 }
 
-.section p{
-    color: red;
-    font-style: italic;
+
+.section p {
+  color: #9b59b6;
+  font-style: italic;
 }
+
 
 /* CUADROS PARA IMAGEN */
 
 .img-placeholder{
 width:300px;
 height:200px;
-background:#87CEEB;
+background:red;
 margin:auto;
 border-radius:10px;
 }

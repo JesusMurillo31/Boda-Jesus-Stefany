@@ -13,6 +13,10 @@ body{
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    
+    padding-top: 180px;  /* SEPARA the texto del adorno */
+    padding-left: 20px;
+    padding-right: 20px;
 
     background-image: url("https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Fondo.jpg");
     background-size: contain;

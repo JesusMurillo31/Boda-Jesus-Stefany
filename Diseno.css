@@ -13,7 +13,13 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-background:#87CEEB;
+
+background-image: url("https://github.com/JesusMurillo31/Boda-Jesus-Stefany/blob/main/images/Fondo.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+background:hsl(197, 71%, 73%);
 color:white;
 }
 

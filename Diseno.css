@@ -32,6 +32,10 @@ font-size:20px;
 padding:60px 20px;
 }
 
+.section p{
+    color: red;
+}
+
 /* CUADROS PARA IMAGEN */
 
 .img-placeholder{

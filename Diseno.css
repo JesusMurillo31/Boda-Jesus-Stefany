@@ -16,21 +16,11 @@ body{
     align-items: center;
     text-align: center;
     padding-top: 180px;
-    padding-left: 20px;
-    padding-right: 20px;
     background-color: #87CEEB;
     /*background-image: url("https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/FondoCabezera.jpeg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;*/
-}
-
-/* MÓVIL: ajusta escala y espacio */
-@media (max-width: 600px){
-  .portada{
-    padding-top: 110px;             /* menos espacio arriba */
-    background-size: 85%;           /* reduce la imagen (70–90% según te guste) */
-  }
 }
 
 .portada h1{

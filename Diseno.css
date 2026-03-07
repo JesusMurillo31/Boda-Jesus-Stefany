@@ -7,24 +7,23 @@ body{
 
 /* PORTADA */
 
-.portada{
-    height: 100%;
+.Cabezera{
+    height: 250px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    padding-top: 180px;
-    background-color: #87CEEB;
+    background-image: url("https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/AnilloPortada.png");
 }
 
-.portada h1{
+.Titulo_Cabezera h1{
     font-size:50px;
     margin:10px;
 }
 
-.portada p{
+.Titulo_Cabezera p{
     font-size:20px;
 }
 

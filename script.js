@@ -5,8 +5,8 @@
   if(!el) return;
 
   // Lee fecha/hora del dataset del HTML
-  const fechaStr = el.getAttribute('data-fecha') || '2026-12-18'; // YYYY-MM-DD
-  const horaStr  = el.getAttribute('data-hora')  || '16:00';      // HH:mm (24h)
+  const fechaStr = el.getAttribute('data-fecha') || '2026-03-06'; // YYYY-MM-DD
+  const horaStr  = el.getAttribute('data-hora')  || '22:15';      // HH:mm (24h)
   const zona     = el.getAttribute('data-zona')  || 'local';      // 'local' | 'utc'
 
   // Construye target en local o UTC

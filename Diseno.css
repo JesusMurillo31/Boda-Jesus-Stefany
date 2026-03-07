@@ -8,22 +8,23 @@ body{
 /* PORTADA */
 
 .Cabezera{
-    height: 410px;
+    background-color: bisque;
+    height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-position: center;   /* centrada */
-
-    background-image: url("https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/AnilloPortada.png");
 }
 
-.Titulo_Cabezera h1{
+.Cabezera Imagen_Cabezera{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/AnilloPortada_150X150.png");
+}
+
+.Cabezera Titulo_Cabezera h1{
     font-size:50px;
-    margin:10px;
+}
+
+.Titulo_Cabezera h2{
+    font-size:30px;
 }
 
 .Titulo_Cabezera p{

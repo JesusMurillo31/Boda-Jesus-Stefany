@@ -39,9 +39,35 @@ body{
     height: 50px; /* Ajusta según necesites */
 }
 
-.Padres_Novio{
+.Padres_Novio h2{
     font-family: "Allura", cursive;
     font-size:30px;
+    margin-top: 10px;
+}
+
+.Padres_Novio p{
+    font-family: "Allura", cursive;
+    font-size:20px;
+    margin-top: -25px;
+}
+
+.Imagen_Novia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Ajusta según necesites */
+}
+
+.Padres_Novia h2{
+    font-family: "Allura", cursive;
+    font-size:30px;
+    margin-top: 10px;
+}
+
+.Padres_Novia p{
+    font-family: "Allura", cursive;
+    font-size:20px;
+    margin-top: -25px;
 }
 
 /* SECCIONES */

@@ -15,6 +15,10 @@ body{
     justify-content: flex-start;
     align-items: center;
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;        /* llena y recorta */
+    background-position: center;   /* centrada */
+
     background-image: url("https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/AnilloPortada.png");
 }
 

@@ -14,8 +14,8 @@ body{
 }
 
 .Cabezera Imagen_Cabezera{
-    height: 100%;
-    width: 100%;
+    height: 150px;
+    width: 150px;
     background-image: url("https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/AnilloPortada_150X150.png");
 }
 

@@ -32,6 +32,12 @@ body{
     font-family: "Allura", cursive;
 }
 
+.Padres{
+    background-color: lightsalmon;
+    padding-top: 20px;
+    padding-bottom: 1px;
+}
+
 .Imagen_Novio{
     display: flex;
     justify-content: center;

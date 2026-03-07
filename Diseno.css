@@ -44,10 +44,11 @@ body{
 
 .img-placeholder{
     width:300px;
-    height:200px;
-    background:#87CEEB;
+    height:450px;
+    background-image: url("https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Boda_en_construccion.jpg");
     margin:auto;
     border-radius:10px;
+    object-fit: contain
 }
 
 /* GALERIA */
@@ -62,6 +63,7 @@ body{
 .galeria .img-placeholder{
     width:200px;
     height:200px;
+    background-image: url("https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Boda_en_construccion-200x200.jpg");
 }
 
 /* EVENTO */

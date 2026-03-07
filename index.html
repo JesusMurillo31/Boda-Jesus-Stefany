@@ -50,8 +50,8 @@
         <!-- Padres de la novia-->
         <section class="Padres_Novia">
             <h2>Padres de la novia</h2>
-            <p>Rosa Elva Lorea</p>
-            <p>Javier Arias</p>
+            <p>Rosa Elva Loera Gutierrez</p>
+            <p>Javier Arias Muñoz</p>
         </section>
         </div>
         <!-- Novios -->
@@ -113,6 +113,44 @@
             </div>
         </section>
 
+        <!-- Cuenta Regresiva -->
+        <section class="section contador-wrapper" aria-labelledby="ttl-contador">
+            <h2 id="ttl-contador">Faltan</h2>
+
+            <!-- Puedes cambiar la fecha/hora aquí mismo y el JS la leerá -->
+            <div id="contador"
+                class="contador"
+                role="timer"
+                aria-live="polite"
+                data-fecha="2026-12-18"
+                data-hora="16:00"
+                data-zona="local">
+            
+                <div class="bloque">
+                    <span class="valor" id="cd-d">--</span>
+                    <small>días</small>
+                </div>
+                
+                <div class="bloque">
+                    <span class="valor" id="cd-h">--</span>
+                    <small>horas</small>
+                </div>
+                
+                <div class="bloque">
+                    <span class="valor" id="cd-m">--</span>
+                    <small>min</small>
+                </div>
+                
+                <div class="bloque">
+                    <span class="valor" id="cd-s">--</span>
+                    <small>seg</small>
+                </div>
+            </div>
+
+          <!-- Mensaje cuando llegue el gran día -->
+            <p id="contador-msg" class="contador-msg" hidden>¡Llegó el gran día! 💍🎉</p>
+        </section>
+
         <!-- CONFIRMACION -->
         <section class="section">
             <h2>Confirmar Asistencia</h2>
@@ -121,6 +159,9 @@
 
             <a class="boton" href="#">Confirmar asistencia</a>
         </section>
+
+        <!-- JS -->
+        <script src="script.js" defer></script>
 
         <footer class="section">
             <p>Con amor, Jesús & Stefany</p>

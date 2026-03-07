@@ -15,18 +15,22 @@ body{
     
 }
 
-.Cabezera Titulo_Cabezera h1{
-    font-size:50px;
-    font-style: "Great Vibes";
+.Titulo_Cabezera h1{
+    font-family: "Allura", cursive;
+    font-size:46px;
+    margin-top: auto;
 }
 
 .Titulo_Cabezera h2{
-    font-size:30px;
-    font-style: italic;
+    font-size:55px;
+    font-family: "Allura", cursive;
+    margin-top: -30px;
 }
 
-.Titulo_Cabezera p{
-    font-size:20px;
+.Mensaje_de_los_novios{
+    background:#ff7e70;
+    font-size:30px;
+    font-family: "Allura", cursive;
 }
 
 /* SECCIONES */

@@ -2,29 +2,27 @@ body{
     margin:0;
     font-family: Arial, sans-serif;
     text-align:center;
-    background:#fafafa;
+    background:#fff0f0;
 }
 
 /* PORTADA */
 
-.Cabezera{
-    background-color: bisque;
-    height: 100%;
-    width: 100%;
-}
-
-.Cabezera Imagen_Cabezera{
-    height: 150px;
-    width: 150px;
-    background-image: url("https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/AnilloPortada_150X150.png");
+.Imagen_Cabezera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Ajusta según necesites */
+    
 }
 
 .Cabezera Titulo_Cabezera h1{
     font-size:50px;
+    font-style: "Great Vibes";
 }
 
 .Titulo_Cabezera h2{
     font-size:30px;
+    font-style: italic;
 }
 
 .Titulo_Cabezera p{

@@ -2,7 +2,9 @@ body{
     margin:0;
     font-family: Arial, sans-serif;
     text-align:center;
-    background:#fff0f0;
+    background:#e4e4e4;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* PORTADA */
@@ -33,7 +35,7 @@ body{
 }
 
 .Padres{
-    background-color: lightsalmon;
+    background-color: #636B2F;
     padding-top: 20px;
     padding-bottom: 1px;
 }
@@ -47,13 +49,13 @@ body{
 
 .Padres_Novio h2{
     font-family: "Allura", cursive;
-    font-size:30px;
+    font-size:35px;
     margin-top: 10px;
 }
 
 .Padres_Novio p{
     font-family: "Allura", cursive;
-    font-size:20px;
+    font-size:25px;
     margin-top: -25px;
 }
 
@@ -66,13 +68,13 @@ body{
 
 .Padres_Novia h2{
     font-family: "Allura", cursive;
-    font-size:30px;
+    font-size:35px;
     margin-top: 10px;
 }
 
 .Padres_Novia p{
     font-family: "Allura", cursive;
-    font-size:20px;
+    font-size:25px;
     margin-top: -25px;
 }
 

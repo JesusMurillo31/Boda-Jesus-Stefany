@@ -93,6 +93,8 @@ body{
 
 .section p {
     font-family: "Allura", cursive;
+    font-size: 25px;
+    margin-top: -25px;
 }
 
 

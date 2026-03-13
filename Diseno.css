@@ -1,3 +1,4 @@
+/* Cuerpo del HTML */
 body{
     margin:0;
     font-family: Arial, sans-serif;
@@ -8,7 +9,6 @@ body{
 }
 
 /* PORTADA */
-
 .Imagen_Cabezera{
     display: flex;
     justify-content: center;
@@ -86,6 +86,12 @@ body{
 }
 
 .section h2 {
+    font-family: "Allura", cursive;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.section h3 {
     font-family: "Allura", cursive;
     font-size: 45px;
     margin-bottom: 20px;

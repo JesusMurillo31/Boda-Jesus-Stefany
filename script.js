@@ -1,18 +1,14 @@
+// ====== Movimiento de slides de galeria ======
 const slides = document.querySelector(".slides_galeria");
 const slide = document.querySelectorAll(".slide");
 
 let index = 0;
 
 function nextSlide(){
-
     index = (index + 1) % slide.length;
-
     slides.style.transform = `translateX(-${index * 100}%)`;
 }
-
 setInterval(nextSlide, 3500);
-
-
 
 // ====== Cuenta regresiva elegante ======
 (function(){

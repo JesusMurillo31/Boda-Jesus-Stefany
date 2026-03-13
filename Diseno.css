@@ -145,9 +145,10 @@ body{
 .evento{
     background:white;
     padding:40px;
+    margin: auto;
+    margin-bottom: 40px;
     border-radius:10px;
     max-width:500px;
-    margin:auto;
     box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 

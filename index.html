@@ -73,10 +73,11 @@
             </div>
         </section>
 
-        <!-- EVENTO -->
+        <!-- Detalles del evento -->
         <section class="section">
             <h2>Detalles del Evento</h2>
 
+            <!-- Seccion iglesia -->
             <div class="evento">
                 <h3>Iglesia</h3>
 
@@ -86,10 +87,8 @@
 
                 <a class="boton" href="https://maps.app.goo.gl/L3aadSs4Lb7kSXg1A" target="_blank">Ver ubicación</a>
             </div>
-        </section>
 
-        <!-- RECEPCION -->
-        <section class="section">
+            <!-- Seccion sasino -->
             <div class="evento">
                 <h3>Recepción Casino</h3>
 
@@ -99,10 +98,8 @@
                 
                 <a class="boton" href="https://maps.app.goo.gl/s5nSYLFpTTE2Kg3K7" target="_blank">Ver ubicación</a>
             </div>
-        </section>
-
-                <!-- Vestimenta -->
-        <section class="section">
+            
+            <!-- Seccion vestimenta -->
             <div class="evento">
                 <h3>Codigo de vestimenta</h3>
 
@@ -115,7 +112,7 @@
         <section class="section contador-wrapper" aria-labelledby="ttl-contador">
             <h2 id="ttl-contador">Faltan</h2>
 
-            <!-- Puedes cambiar la fecha/hora aquí mismo y el JS la leerá -->
+            <!-- Contador -->
             <div id="contador"
                 class="contador"
                 role="timer"
@@ -124,21 +121,25 @@
                 data-hora="16:00"
                 data-zona="local">
             
+                <!-- Bloque Dias -->
                 <div class="bloque">
                     <span class="valor" id="cd-d">--</span>
                     <small>días</small>
                 </div>
                 
+                <!-- Bloque Horas -->
                 <div class="bloque">
                     <span class="valor" id="cd-h">--</span>
                     <small>horas</small>
                 </div>
                 
+                <!-- Bloque Minutos -->
                 <div class="bloque">
                     <span class="valor" id="cd-m">--</span>
                     <small>min</small>
                 </div>
                 
+                <!-- Bloque Segundos -->
                 <div class="bloque">
                     <span class="valor" id="cd-s">--</span>
                     <small>seg</small>
@@ -146,26 +147,24 @@
             </div>
 
           <!-- Mensaje cuando llegue el gran día -->
-            <p id="contador-msg" class="contador-msg" hidden>¡Llegó el gran día! 💍🎉</p>
+            <p id="contador-msg" class="contador-msg" hidden>¡Llegó nuestro gran día! 💍🎉</p>
         </section>
 
-        <!-- CONFIRMACION -->
-        <section class="section">
-            <h2>Confirmar Asistencia</h2>
-
-            <p>Por favor confirma tu asistencia antes del 01 / 10 / 2026</p>
-
-            <a class="boton" href="#">Confirmar asistencia</a>
-        </section>
-
-        <!-- JS -->
-        <script src="script.js" defer></script>
-
+        <!-- Pie de pagina -->
         <footer class="section">
-            <p>Con amor, Jesús & Stefany</p>
-            <p>Para nosotros es importante tu presencia y los buenos deseos.</p>
-            <br>
-            Celebra este momento especial con nosotros.
+            <p>Nuestra Boda</p>
+            <p>J & S</p>
+
+            <!-- Confirmacion -->
+            <section class="section">
+                <h2>Confirmar Asistencia</h2>
+                <p>Por favor confirma tu asistencia antes del 01 / 10 / 2026</p>
+
+                <a class="boton" href="#">Confirmar asistencia</a>
+            </section>
         </footer>
+
+        <!-- Javascript -->
+        <script src="script.js" defer></script>
     </body>
 </html>

@@ -1,3 +1,23 @@
+const slides = document.querySelector(".slides");
+const slide = document.querySelectorAll(".slide");
+
+let index = 0;
+
+function nextSlide(){
+
+    index++;
+
+    if(index >= slide.length){
+        index = 0;
+    }
+
+    slides.style.transform = `translateX(-${index * 100}%)`;
+}
+
+setInterval(nextSlide, 3500);
+
+
+
 // ====== Cuenta regresiva elegante ======
 (function(){
   const $ = (sel) => document.querySelector(sel);

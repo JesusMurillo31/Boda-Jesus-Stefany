@@ -129,7 +129,7 @@ body{
 }
 
 .slide{
-    width:100%;
+    width:300px;
     flex-shrink:0;
     height:450px;
     object-fit:cover;
@@ -226,6 +226,7 @@ body{
 
     .section{
         padding:20px 10px;
+        border-radius: 5px;
     }
 
     .slide{

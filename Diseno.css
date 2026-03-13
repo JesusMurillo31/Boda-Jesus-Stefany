@@ -87,7 +87,8 @@ body{
 
 .section h2 {
     font-family: "Allura", cursive;
-    font-size: 50px;
+    font-size: 45px;
+    margin-bottom: 20px;
 }
 
 .section p {

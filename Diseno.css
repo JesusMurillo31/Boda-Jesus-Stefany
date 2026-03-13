@@ -124,7 +124,7 @@ body{
 
 .slides_galeria{
     display:flex;
-    width:100%;
+    width:300px;
     transition:transform 1s ease;
 }
 

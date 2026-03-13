@@ -228,6 +228,10 @@ body{
         padding:20px 10px;
     }
 
+    .slide{
+        height:300px;
+    }
+
 }
 
 @keyframes fadeUp{

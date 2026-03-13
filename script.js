@@ -5,11 +5,7 @@ let index = 0;
 
 function nextSlide(){
 
-    index++;
-
-    if(index >= slide.length){
-        index = 0;
-    }
+    index = (index + 1) % slide.length;
 
     slides.style.transform = `translateX(-${index * 100}%)`;
 }

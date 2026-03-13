@@ -133,7 +133,7 @@ body{
     flex-shrink:0;
     height:450px;
     object-fit:cover;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 /* EVENTO */
@@ -229,9 +229,16 @@ body{
         padding:20px 10px;
     }
 
+    .slider{
+        max-width:500px;
+        margin:auto;
+        overflow:hidden;
+        border-radius:10px;
+        box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    }
+
     .slide{
         height:300px;
-        border-radius: 20px;
     }
 
 }

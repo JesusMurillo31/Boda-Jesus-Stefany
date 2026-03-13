@@ -85,9 +85,14 @@ body{
     padding: 30px;
 }
 
+.section h2 {
+    font-family: "Allura", cursive;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
 
 .section p {
-    font-style: italic;
+    font-family: "Allura", cursive;
 }
 
 

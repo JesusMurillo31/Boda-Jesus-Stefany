@@ -1,4 +1,4 @@
-const slides = document.querySelector(".slides");
+const slides = document.querySelector(".slides_galeria");
 const slide = document.querySelectorAll(".slide");
 
 let index = 0;

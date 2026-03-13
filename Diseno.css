@@ -107,6 +107,9 @@ body{
     justify-content: center;
     align-items: center;
     background-image: url("https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Novios_2_300x450.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     border-radius:10px;
 }
 

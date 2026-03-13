@@ -101,7 +101,7 @@ body{
 /* CUADROS PARA IMAGEN */
 
 .img-placeholder{
-    width:300px;
+    width:350px;
     height:450px;
     display: flex;
     justify-content: center;

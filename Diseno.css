@@ -83,12 +83,13 @@ body{
 
 .section{
     padding: 30px;
+    margin-bottom: -80px;
 }
 
 .section h2 {
     font-family: "Allura", cursive;
     font-size: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .section h3 {
@@ -103,14 +104,13 @@ body{
     margin-top: -25px;
 }
 
-
 /* CUADROS PARA IMAGEN */
 
 .img-placeholder{
     width:300px;
     max-width:90%;
     height:450px;
-    background-image: url("https: //jesusmurillo 31github .io/Boda Jesus Stefany/images/Novios/Novios_2_300x450.png");
+    background-image: url("https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Novios/Novios_2_300x450.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

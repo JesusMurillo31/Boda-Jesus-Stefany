@@ -243,7 +243,7 @@ img{
 @media (max-width:600px){
     .slider{
         max-width:500px;
-        margin:auto;
+        margin:40px auto;
         overflow:hidden;
         border-radius:10px;
         box-shadow: 0 0 0 12px #636B2F;

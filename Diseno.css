@@ -254,7 +254,7 @@ img{
     .slides_galeria{
         display:flex;
         transition:transform 1s ease;
-        border-radius:10px;
+        border-radius:5px;
     }
 
     .slide{
@@ -262,7 +262,7 @@ img{
         flex-shrink:0;
         height:450px;
         object-fit:cover;
-        border-radius:10px;
+        border-radius:5px;
     }
 }
 

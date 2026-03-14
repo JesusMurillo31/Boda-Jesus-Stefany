@@ -147,10 +147,12 @@ img{
 .slide{
     margin: 0;
     width:100%;
-    flex-shrink:0;
-    height:450px;
+    flex:0 0 100%;
+    aspect-ratio: 2 / 3;
+    height:auto;
     object-fit:cover;
     border-radius: 10px;
+    display: block;
 }
 
 /* EVENTO */
@@ -242,8 +244,8 @@ img{
 
 @media (max-width:600px){
     .slider{
-        max-width:500px;
-        margin:40px auto;
+        max-width:92vm;
+        margin:24px auto;
         overflow:hidden;
         border-radius:10px;
         box-shadow: 0 0 0 12px #636B2F;

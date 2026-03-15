@@ -34,11 +34,12 @@ body{
     font-family: "Allura", cursive;
 }
 
+/* Divisor de secciones */
 .divisor{
     display:flex;
     align-items:center;
     justify-content:center;
-    margin:50px auto;
+    margin: 20px;
     width:90%;
 }
 
@@ -49,7 +50,7 @@ body{
 }
 
 .corazon{
-    margin:0 15px;
+    margin:0px;
     font-size:22px;
     color:#000;
 }
@@ -140,6 +141,7 @@ body{
     font-family: "Allura", cursive;
     font-size: 45px;
     margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 .slider{
@@ -185,7 +187,8 @@ img{
 .section h2 {
     font-family: "Allura", cursive;
     font-size: 45px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 .section h3 {
@@ -204,8 +207,7 @@ img{
 .evento{
     background:white;
     padding:40px;
-    margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     border-radius:10px;
     max-width:500px;
     box-shadow:0 0 10px rgba(0,0,0,0.1);

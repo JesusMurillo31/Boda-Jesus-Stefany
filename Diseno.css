@@ -8,7 +8,7 @@ body{
     padding-right: 5px;
 }
 
-/* PORTADA */
+/* Portada */
 .Imagen_Cabezera{
     display: flex;
     justify-content: center;
@@ -34,6 +34,7 @@ body{
     font-family: "Allura", cursive;
 }
 
+/* Seccion Padres */
 .Padres{
     background-color: black;
     padding-top: 20px;
@@ -83,31 +84,25 @@ body{
     color: white;
 }
 
-/* SECCIONES */
-.section{
-    padding: 30px;
-    margin-bottom: -80px;
+/* Seccion Novios */
+.Novios{
+    padding: 0px;
+    margin-bottom: 0px;
 }
 
-.section h2 {
+.Novios h2{
     font-family: "Allura", cursive;
     font-size: 45px;
     margin-bottom: 50px;
 }
 
-.section h3 {
-    font-family: "Allura", cursive;
-    font-size: 45px;
-    margin-bottom: 20px;
-}
-
-.section p {
+.Novios p{
     font-family: "Allura", cursive;
     font-size: 25px;
     margin-top: -25px;
 }
 
-/* CUADROS PARA IMAGEN */
+/* Imagen de novios */
 .img-placeholder{
     width:300px;
     max-width:90%;
@@ -121,11 +116,16 @@ body{
     margin-right: auto;
 }
 
-/* GALERIA */
-img{
-    max-width: 100%;
-    height: auto;
-    display: block;
+/* Seccion Galeria */
+.Galeria{
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.Galeria h2{
+    font-family: "Allura", cursive;
+    font-size: 45px;
+    margin-bottom: 0px;
 }
 
 .slider{
@@ -156,15 +156,37 @@ img{
     display: block;
 }
 
-.Icono_Iglesia{
-    display: flex;
-    margin: 0 auto;
-    width: 100px;           /* tamaño del icono */
+img{
+    max-width: 100%;
     height: auto;
-    margin-top: -30;
+    display: block;
 }
 
-/* EVENTO */
+/* Secciones detalles del evento */
+.section{
+    padding: 20px;
+    margin-bottom: -80px;
+}
+
+.section h2 {
+    font-family: "Allura", cursive;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.section h3 {
+    font-family: "Allura", cursive;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-family: "Allura", cursive;
+    font-size: 25px;
+    margin-top: -25px;
+}
+
+/* Eventos */
 .evento{
     background:white;
     padding:40px;
@@ -179,7 +201,15 @@ img{
     margin-bottom: 40px; 
 }
 
-/* BOTON */
+.Icono_Iglesia{
+    display: flex;
+    margin: -50px auto;
+    width: 100px;           /* tamaño del icono */
+    height: auto;
+    margin-top: -30px;
+}
+
+/* Boton */
 .boton{
     display:inline-block;
     margin-top:20px;
@@ -190,10 +220,15 @@ img{
     border-radius:5px;
 }
 
-/* === Contador === */
+/* Contador */
 .contador-wrapper{
     text-align: center;
-    padding: 32px 20px;
+}
+
+.contador-wrapper h2{
+    font-family: "Allura", cursive;
+    font-size: 45px;
+    margin-bottom: 20px;
 }
 
 .contador{
@@ -202,7 +237,8 @@ img{
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 .contador .bloque{
@@ -245,9 +281,31 @@ img{
     transform: translateY(8px);
     animation: fadeUp .6s ease forwards;
 }
-.contador .bloque:nth-child(2){ animation-delay: .05s; }
-.contador .bloque:nth-child(3){ animation-delay: .10s; }
-.contador .bloque:nth-child(4){ animation-delay: .15s; }
+.contador .bloque:nth-child(2){
+    animation-delay: .05s;
+}
+.contador .bloque:nth-child(3){
+    animation-delay: .10s;
+}
+.contador .bloque:nth-child(4){
+    animation-delay: .15s;
+}
+
+.Pie_de_pagina{
+    padding: 10px;
+}
+
+.Pie_de_pagina h2{
+    font-family: "Allura", cursive;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.Pie_de_pagina p{
+    font-family: "Allura", cursive;
+    font-size: 25px;
+    margin-top: -25px;
+}
 
 @media (max-width:600px){
     .slider{

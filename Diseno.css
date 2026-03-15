@@ -36,7 +36,6 @@ body{
 
 /* Seccion Padres */
 .Padres{
-    background-color: black;
     padding-top: 20px;
     padding-bottom: 1px;
 }
@@ -52,14 +51,12 @@ body{
     font-family: "Allura", cursive;
     font-size:35px;
     margin-top: 10px;
-    color: white;
 }
 
 .Padres_Novio p{
     font-family: "Allura", cursive;
     font-size:25px;
     margin-top: -25px;
-    color: white;
 }
 
 .Imagen_Novia{
@@ -73,14 +70,12 @@ body{
     font-family: "Allura", cursive;
     font-size:35px;
     margin-top: 10px;
-    color: white;
 }
 
 .Padres_Novia p{
     font-family: "Allura", cursive;
     font-size:25px;
     margin-top: -25px;
-    color: white;
 }
 
 /* Seccion Novios */

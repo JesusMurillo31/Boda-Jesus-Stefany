@@ -177,7 +177,22 @@
             <p>Nos encantaría contar con tu presencia en este día tan especial.</p>
             <p>Por favor confirma antes del 1 de octubre de 2026.</p>
 
-            <a class="boton" href="https://docs.google.com/forms/d/e/1FAIpQLSe1mG49bYEOPhsWAVk-fzacJgG8TvJGEZHB9ITdCN88bsIWwQ/viewform?usp=publish-editor" target="_blank">Reservar mi lugar</a>
+            <a class="boton" onclick="abrirFormulario()">Reservar mi lugar</a>
+
+            <div id = "modalFormulario" class = "modal">
+                <div class="modal-contenido">
+
+                    <span class="cerrar" onclick="cerrarFormulario()">×</span>
+
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe1mG49bYEOPhsWAVk-fzacJgG8TvJGEZHB9ITdCN88bsIWwQ/viewform?embedded=true" 
+                        width="640" 
+                        height="706" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0"> Cargando… 
+                    </iframe>
+                </div>
+            </div>
         </section>
 
         <!-- Pie de pagina -->

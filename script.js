@@ -83,3 +83,13 @@ setInterval(nextSlide, 3500);
     }
   });
 })();
+
+  // Abrir formulario de confirmacion
+function abrirFormulario(){
+    document.getElementById("modalFormulario").style.display = "block";
+}
+
+  // Cerrar formulario de confirmacion
+function cerrarFormulario(){
+    document.getElementById("modalFormulario").style.display = "none";
+}

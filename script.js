@@ -86,10 +86,9 @@ setInterval(nextSlide, 3500);
 
   // Abrir formulario de confirmacion
 function abrirFormulario(){
-    document.getElementById("modalFormulario").style.display = "block";
+    document.getElementById("modalFormulario").classList.add("activo");
 }
 
-  // Cerrar formulario de confirmacion
 function cerrarFormulario(){
-    document.getElementById("modalFormulario").style.display = "none";
+    document.getElementById("modalFormulario").classList.remove("activo");
 }

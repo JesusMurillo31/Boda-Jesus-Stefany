@@ -325,6 +325,11 @@ img{
     animation-delay: .15s;
 }
 
+.Logo_Novios{
+    padding: 0px;
+    margin-top: -70px;
+}
+
 .Logo_Novios h2{
     font-family: 'Great Vibes', cursive;
     font-size: 45px;

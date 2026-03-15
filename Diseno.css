@@ -4,8 +4,8 @@ body{
     font-family: Arial, sans-serif;
     text-align:center;
     background:#e4e4e4;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* Portada */
@@ -214,10 +214,19 @@ img{
     display:inline-block;
     margin-top:20px;
     padding:12px 25px;
-    background:#000;
+    background:#111;
     color:white;
     text-decoration:none;
     border-radius:5px;
+    box-shadow: 0 0 6px 2px rgba(0,0,0,0.55);
+}
+
+.boton:hover {
+  background-color: #333;
+}
+
+.boton:active {
+  transform: scale(0.97);
 }
 
 /* Contador */
@@ -291,20 +300,20 @@ img{
     animation-delay: .15s;
 }
 
-.Pie_de_pagina{
+/* Confirmacion */
+.Confirmacion{
     padding: 10px;
 }
 
-.Pie_de_pagina h2{
-    font-family: "Allura", cursive;
-    font-size: 45px;
-    margin-bottom: 20px;
+/* Pie de pagina */
+.Pie_de_pagina{
+    background-color: #000;
+    color: white;
+    padding: 1px;
 }
 
 .Pie_de_pagina p{
-    font-family: "Allura", cursive;
-    font-size: 25px;
-    margin-top: -25px;
+    font-size: 12px;
 }
 
 @media (max-width:600px){

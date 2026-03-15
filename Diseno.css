@@ -315,6 +315,12 @@ img{
     background-color:rgba(0,0,0,0.6);
 }
 
+.formulario-iframe{
+    width:100%;
+    height:75vh;
+    border:none;
+}
+
 .modal-contenido{
     background:white;
     margin:5% auto;

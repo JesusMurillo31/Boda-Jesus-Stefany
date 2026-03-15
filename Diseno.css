@@ -338,6 +338,7 @@ img{
     background-color: #000;
     color: white;
     padding: 1px;
+    margin-top: 25px;
 }
 
 .Pie_de_pagina p{
@@ -350,7 +351,7 @@ img{
         margin:24px auto;
         overflow:hidden;
         border-radius:5px;
-        box-shadow: 0 0 0 6px #636B2F;
+        box-shadow: 0 0 0 6px #000;
     }
 
     .slides_galeria{

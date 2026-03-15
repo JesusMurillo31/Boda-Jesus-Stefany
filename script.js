@@ -5,15 +5,17 @@ const slide = document.querySelectorAll(".slide");
 let index = 0;
 
 function nextSlide(){
-    index = (index + 1) % slide.length;
-    slides.style.transform = `translateX(-${index * 100}%)`;
+  index = (index + 1) % slide.length;
+  slides.style.transform = `translateX(-${index * 100}%)`;
 }
+
 setInterval(nextSlide, 3500);
 
 // ====== Cuenta regresiva elegante ======
 (function(){
   const $ = (sel) => document.querySelector(sel);
   const el = $('#contador');
+  
   if(!el) return;
 
   // Lee fecha/hora del dataset del HTML

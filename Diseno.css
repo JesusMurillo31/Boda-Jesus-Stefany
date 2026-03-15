@@ -41,19 +41,13 @@ body{
     justify-content:center;
     margin: 20px;
     width:90%;
+    gap: 10px;
 }
 
 .linea{
     flex:1;
     height:1px;
     background:#000;
-}
-
-.corazon{
-    padding: 5px;
-    margin:0px;
-    font-size:22px;
-    color:#000;
 }
 
 /* Seccion Padres */

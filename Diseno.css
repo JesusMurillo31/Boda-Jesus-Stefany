@@ -45,13 +45,13 @@ body{
 .linea{
     flex:1;
     height:1px;
-    background:#555;
+    background:#000;
 }
 
 .corazon{
     margin:0 15px;
     font-size:22px;
-    color:#555;
+    color:#000;
 }
 
 /* Seccion Padres */

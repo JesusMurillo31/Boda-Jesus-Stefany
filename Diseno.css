@@ -34,6 +34,26 @@ body{
     font-family: "Allura", cursive;
 }
 
+.divisor{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:50px auto;
+    width:90%;
+}
+
+.linea{
+    flex:1;
+    height:1px;
+    background:#555;
+}
+
+.corazon{
+    margin:0 15px;
+    font-size:22px;
+    color:#555;
+}
+
 /* Seccion Padres */
 .Padres{
     padding-top: 20px;

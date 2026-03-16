@@ -1,3 +1,8 @@
+function reproducirMusica(){
+    var audio = document.getElementById("musica");
+    audio.play();
+}
+
 // ====== Movimiento de slides de galeria ======
 const slides = document.querySelector(".slides_galeria");
 const slide = document.querySelectorAll(".slide");

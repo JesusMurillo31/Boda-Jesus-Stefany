@@ -1,6 +1,17 @@
-function reproducirMusica(){
-    var audio = document.getElementById("musica");
-    audio.play();
+var audio = document.getElementById("musica");
+var boton = document.getElementById("botonMusica");
+
+function toggleMusica(){
+
+    if(audio.paused){
+        audio.play();
+        boton.innerHTML = "❚❚ Detener"; // icono pausa
+    }
+    else{
+        audio.pause();
+        boton.innerHTML = "▶ Reproducir"; // icono play
+    }
+
 }
 
 // ====== Movimiento de slides de galeria ======

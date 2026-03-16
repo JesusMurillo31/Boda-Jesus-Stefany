@@ -168,11 +168,38 @@ body{
 }
 
 .slider{
+    position: relative;
     max-width:500px;
     margin:40px auto;
     overflow:hidden;
     border-radius:5px;
-    box-shadow: 0 0 0 7px #636B2F;
+    box-shadow: 0 0 0 7px #000;
+}
+
+.boton_galeria{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(0,0,0,0.5);
+    color:white;
+    border:none;
+    font-size:28px;
+    padding:10px 15px;
+    cursor:pointer;
+    border-radius:50%;
+    z-index:10;
+}
+
+.boton_galeria:hover{
+    background:rgba(0,0,0,0.7);
+}
+
+.atras{
+    left:10px;
+}
+
+.siguiente{
+    right:10px;
 }
 
 .slides_galeria{

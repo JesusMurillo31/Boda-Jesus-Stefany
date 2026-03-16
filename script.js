@@ -20,12 +20,20 @@ const slide = document.querySelectorAll(".slide");
 
 let index = 0;
 
-function nextSlide(){
-  index = (index + 1) % slide.length;
+function moverSlide(direccion){
+
+  index += direccion;
+
+  if(index < 0){
+    index = slide.length - 1;
+  }
+
+  if(index >= slide.length){
+    index = 0;
+  }
+
   slides.style.transform = `translateX(-${index * 100}%)`;
 }
-
-setInterval(nextSlide, 3500);
 
 // ====== Cuenta regresiva elegante ======
 (function(){

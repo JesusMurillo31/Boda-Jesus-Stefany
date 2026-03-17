@@ -106,16 +106,27 @@ body{
     object-fit: cover;
 }
 
+.overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.2) 20%,
+        rgba(0,0,0,0.4) 40%,
+        rgba(0,0,0,0.7) 70%,
+        rgba(0,0,0,1) 100%
+    );
+}
+
 /* Nombre de los novios de portada */
 .Titulo_Cabezera{
     position: absolute;
-    padding-left: 50px;
-    padding-right: 50px;
-    top: 90%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    z-index: 2;
 }
 
 .Titulo_Cabezera h1{

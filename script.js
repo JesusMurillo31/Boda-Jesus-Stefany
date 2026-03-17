@@ -23,7 +23,7 @@ var boton = document.getElementById("botonMusica");
 function toggleMusica(){
 
     if(audio.paused){
-        audio.play();
+        audio.play().catch(()=>{}); // Maneja el error si el navegador bloquea la reproducción automática
         boton.innerHTML = "❚❚ Detener"; // icono pausa
     }
     else{
@@ -35,7 +35,9 @@ function toggleMusica(){
 
 // ====== Movimiento de slides de galeria ======
 const slides = document.querySelector(".slides_galeria");
-const slide = document.querySelectorAll(".slide");
+const slideList = document.querySelectorAll(".slide");
+
+slideList.length
 
 let index = 0;
 
@@ -44,10 +46,10 @@ function moverSlide(direccion){
   index += direccion;
 
   if(index < 0){
-    index = slide.length - 1;
+    index = slideList.length - 1;
   }
 
-  if(index >= slide.length){
+  if(index >= slideList.length){
     index = 0;
   }
 

@@ -1,3 +1,19 @@
+function entrarInvitacion(){
+
+    const bienvenida = document.getElementById("Bienvenida");
+
+    bienvenida.style.opacity = "0";
+    bienvenida.style.transition = "opacity 0.8s";
+
+    audio.play();
+    boton.innerHTML = "❚❚ Detener";
+
+    setTimeout(()=>{
+        bienvenida.style.display = "none";
+    },800);
+
+}
+
 var audio = document.getElementById("musica");
 var boton = document.getElementById("botonMusica");
 
@@ -9,7 +25,7 @@ function toggleMusica(){
     }
     else{
         audio.pause();
-        boton.innerHTML = "▶ Reproducir"; // icono play
+        boton.innerHTML = "Reproducir"; // icono play
     }
 
 }

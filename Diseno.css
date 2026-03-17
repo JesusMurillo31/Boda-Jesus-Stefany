@@ -113,7 +113,8 @@ body{
         to bottom,
         rgba(0,0,0,0.2) 20%,
         rgba(0,0,0,0.4) 40%,
-        rgba(0,0,0,0.7) 70%,
+        rgba(0,0,0,0.6) 60%,
+        rgba(0,0,0,0.8) 80%,
         rgba(0,0,0,1) 100%
     );
 }
@@ -133,6 +134,7 @@ body{
     font-family: 'Great Vibes', cursive;
     font-size:60px;
     text-shadow:4px 4px 0px black;
+    white-space: nowrap;
 }
 
 /* Mensaje de los novios para los invitados */

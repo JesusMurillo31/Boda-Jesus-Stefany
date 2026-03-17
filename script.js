@@ -1,16 +1,19 @@
+
+document.body.classList.add("modal-activo");
 function entrarInvitacion(){
 
     const bienvenida = document.getElementById("Bienvenida");
 
     bienvenida.style.opacity = "0";
-    bienvenida.style.transition = "opacity 0.8s";
+    bienvenida.style.transition = "opacity 2.3s ease";
 
     audio.play();
     boton.innerHTML = "❚❚ Detener";
 
     setTimeout(()=>{
         bienvenida.style.display = "none";
-    },800);
+        document.body.classList.remove("modal-activo");
+    },1800);
 
 }
 

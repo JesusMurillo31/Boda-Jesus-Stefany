@@ -58,6 +58,10 @@ body{
     padding-right: 0px;
 }
 
+body.modal.activo{
+    overflow: hidden;
+}
+
 #botonMusica{
     position: fixed;
     Top:10px;
@@ -527,6 +531,28 @@ img{
 
 /* Ayudas visuales para dispositivos móviles */
 @media (max-width:600px){
+    .modal-bienvenida{
+        padding:25px 20px;
+        max-width:300px;
+    }
+
+    .modal-bienvenida h2{
+        font-size:50px;
+    }
+
+    .modal-bienvenida h1{
+        font-size:35px;
+    }
+
+    .modal-bienvenida p{
+        font-size:20px;
+    }
+
+    .modal-bienvenida button{
+        padding:10px 22px;
+        font-size:20px;
+    }
+
     .slider{
         max-width:92vm;
         margin:24px auto;

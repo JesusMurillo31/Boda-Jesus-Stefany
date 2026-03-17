@@ -48,6 +48,10 @@
     cursor: pointer;
 }
 
+body.modal-activo{
+    overflow: hidden;
+}
+
 /* Cuerpo del HTML */
 body{
     margin:0;
@@ -56,10 +60,6 @@ body{
     background:#e4e4e4;
     padding-left: 0px;
     padding-right: 0px;
-}
-
-body.modal.activo{
-    overflow: hidden;
 }
 
 #botonMusica{

@@ -695,7 +695,7 @@ img{
     }
 
     .scroll-indicator{
-        transform: translateY(clamp(-5px, -3vw, -15px));
+        margin-top: 5px;
     }
 }
 

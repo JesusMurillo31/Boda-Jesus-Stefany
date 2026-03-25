@@ -36,18 +36,62 @@
             </div>
         </div>
 
-        <!-- Portada -->
-        <div class="Imagen_Cabezera">
-            <img src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Novios/Novios_2_300x450.png" class="foto-portada" alt="Novios">
+            <!-- Imagen de la portada -->
+            <div class="Imagen_Cabezera">
+                <img src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Novios/Novios_2_300x450.png" class="foto-portada" alt="Novios">
             
-            <div class="overlay"></div>
-        </div>
+                <div class="overlay"></div>
 
-        <!-- Titulo -->
-        <div class="Titulo_Cabezera">
-            <h1>Nuestra Boda</h1>
-            <p>J & S</p>
-        </div>
+                <!-- Titulo -->
+                <div class="Titulo_Cabezera">
+                    <h1>Nuestra Boda</h1>
+                    <p>J & S</p>
+                
+
+                <!-- Cuenta Regresiva -->
+                <section class="section contador-wrapper" aria-labelledby="ttl-contador">
+                    <h2 id="ttl-contador">Faltan</h2>
+
+                    <!-- Contador -->
+                    <div id="contador"
+                        class="contador"
+                        role="timer"
+                        aria-live="polite"
+                        data-fecha="2026-12-18"
+                        data-hora="16:00"
+                        data-zona="local">
+            
+                        <!-- Bloque Dias -->
+                        <div class="bloque">
+                            <span class="valor" id="cd-d">--</span>
+                            <small>Días</small>
+                        </div>
+                
+                        <!-- Bloque Horas -->
+                        <div class="bloque">
+                            <span class="valor" id="cd-h">--</span>
+                            <small>Horas</small>
+                        </div>
+                
+                        <!-- Bloque Minutos -->
+                        <div class="bloque">
+                            <span class="valor" id="cd-m">--</span>
+                            <small>Min</small>
+                        </div>
+                
+                        <!-- Bloque Segundos -->
+                        <div class="bloque">
+                            <span class="valor" id="cd-s">--</span>
+                            <small>Seg</small>
+                        </div>
+                    </div>
+                </section>
+                </div>
+            </div>
+
+            <!-- Mensaje cuando llegue el gran día -->
+            <p id="contador-msg" class="contador-msg" hidden>¡Llegó nuestro gran día! 💍🎉</p>
+        </section>
 
         <!-- Mensaje de los novios para los invitados -->
         <section class="Mensaje_de_los_novios">
@@ -191,48 +235,6 @@
             <span class="linea"></span>
         </div>
 
-
-        <!-- Cuenta Regresiva -->
-        <section class="section contador-wrapper" aria-labelledby="ttl-contador">
-            <h2 id="ttl-contador">Faltan</h2>
-
-            <!-- Contador -->
-            <div id="contador"
-                class="contador"
-                role="timer"
-                aria-live="polite"
-                data-fecha="2026-12-18"
-                data-hora="16:00"
-                data-zona="local">
-            
-                <!-- Bloque Dias -->
-                <div class="bloque">
-                    <span class="valor" id="cd-d">--</span>
-                    <small>Días</small>
-                </div>
-                
-                <!-- Bloque Horas -->
-                <div class="bloque">
-                    <span class="valor" id="cd-h">--</span>
-                    <small>Horas</small>
-                </div>
-                
-                <!-- Bloque Minutos -->
-                <div class="bloque">
-                    <span class="valor" id="cd-m">--</span>
-                    <small>Min</small>
-                </div>
-                
-                <!-- Bloque Segundos -->
-                <div class="bloque">
-                    <span class="valor" id="cd-s">--</span>
-                    <small>Seg</small>
-                </div>
-            </div>
-
-          <!-- Mensaje cuando llegue el gran día -->
-            <p id="contador-msg" class="contador-msg" hidden>¡Llegó nuestro gran día! 💍🎉</p>
-        </section>
 
         <!-- Linea divisora con corazon -->
         <div class="divisor">

@@ -134,16 +134,16 @@ body{
 
 .Titulo_Cabezera h1{
     font-family: 'Great Vibes', cursive;
-    font-size:70px;
-    text-shadow:4px 4px 0px black;
+    font-size: 70px;
+    text-shadow: 4px 4px 0px black;
     white-space: nowrap;
     margin: 0px;
 }
 
 .Titulo_Cabezera p{
     font-family: 'Cormorant Garamond', serif;
-    font-size:50px;
-    text-shadow:4px 4px 0px black;
+    font-size: 50px;
+    text-shadow: 4px 4px 0px black;
     white-space: nowrap;
     margin: 0px;
 }
@@ -151,7 +151,7 @@ body{
 /* Mensaje de los novios para los invitados */
 .Mensaje_de_los_novios{
     padding: 0px;
-    font-size:25px;
+    font-size: 25px;
     font-family: 'Cormorant Garamond', serif;
 }
 
@@ -161,14 +161,14 @@ body{
     align-items:center;
     justify-content:center;
     margin: 40px auto;
-    width:90%;
+    width: 90%;
     max-width: 100%;
     gap: 10px;
 }
 
 .linea{
-    flex:1;
-    height:1px;
+    flex: 1;
+    height: 1px;
     background:#000;
 }
 
@@ -187,13 +187,13 @@ body{
 
 .Padres_Novio h2{
     font-family: 'Great Vibes', cursive;
-    font-size:45px;
+    font-size: 45px;
     margin-top: 10px;
 }
 
 .Padres_Novio p{
     font-family: 'Cormorant Garamond', serif;
-    font-size:25px;
+    font-size: 25px;
     margin-top: -25px;
 }
 
@@ -206,13 +206,13 @@ body{
 
 .Padres_Novia h2{
     font-family: 'Great Vibes', cursive;
-    font-size:45px;
+    font-size: 45px;
     margin-top: 10px;
 }
 
 .Padres_Novia p{
     font-family: 'Cormorant Garamond', serif;
-    font-size:25px;
+    font-size: 25px;
     margin-top: -25px;
 }
 
@@ -249,25 +249,25 @@ body{
 
 .slider{
     position: relative;
-    max-width:500px;
-    margin:40px auto;
-    overflow:hidden;
+    max-width: 500px;
+    margin: 40px auto;
+    overflow: hidden;
     box-shadow: 0 0 6px 2px rgba(0,0,0,0.80);
 }
 
 .boton_galeria{
-    position:absolute;
-    top:50%;
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
     transition: transform .2s;
-    background:rgba(0,0,0,0.5);
-    color:white;
-    border:none;
-    font-size:28px;
-    padding:10px 15px;
-    cursor:pointer;
-    border-radius:50%;
-    z-index:10;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 28px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
 }
 
 .boton_galeria:active{
@@ -338,12 +338,12 @@ img{
 
 /* Eventos */
 .evento{
-    background:white;
-    padding:40px;
+    background: white;
+    padding: 40px;
     margin: 0 auto 30px auto;
-    border-radius:10px;
-    max-width:500px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .evento h3{
@@ -419,44 +419,44 @@ img{
 }
 
 .contador-wrapper h2{
-    font-family: 'Great Vibes', cursive;
-    font-size: 45px;
-    margin-bottom: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    margin-bottom: 0px;
 }
 
 .contador{
     font-family: 'Italic', serif;
     display: flex;
-    gap: 16px;
+    gap: clamp(10px, 4vw, 40px);
     justify-content: center;
     align-items: stretch;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    padding-bottom: 50px;
+    flex-wrap: nowrap;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .contador .bloque{
-    min-width: 50px;
-    background: #ffffff;
+    min-width: clamp(50px, 18vw, 90px);
+    padding: clamp(8px, 2vw, 14px);
     border: 1px solid rgba(0,0,0,.08);
     border-radius: 12px;
-    padding: 12px 10px;
     box-shadow: 0 6px 14px rgba(0,0,0,.06);
 }
 
 .contador .valor{
     display: block;
-    font-size: clamp(28px, 6vw, 48px);
+    font-size: clamp(22px, 5vw, 40px);
     font-weight: 700;
     line-height: 1;
-    color: #111;
+    color: #eee;
     font-variant-numeric: tabular-nums;  /* columnas alineadas */
 }
 
 .contador small{
+    font-size: clamp(10px, 2.5vw, 14px);
     display: block;
     margin-top: 6px;
-    color: #555;
+    color: #eee;
     letter-spacing: .3px;
 }
 
@@ -629,6 +629,10 @@ img{
 
     .formulario-iframe{
         height:70vh;
+    }
+
+    .contador{
+        flex-wrap: wrap;
     }
 }
 

@@ -124,7 +124,7 @@ body{
 /* Nombre de los novios de portada */
 .Titulo_Cabezera{
     position: absolute;
-    top: 70%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -695,7 +695,7 @@ img{
     }
 
     .scroll-indicator{
-        margin-top: 5px;
+        margin-top: 8px;
     }
 }
 

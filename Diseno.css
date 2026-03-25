@@ -695,8 +695,7 @@ img{
     }
 
     .scroll-indicator{
-        margin-top: 5px; /* 🔥 menos espacio */
-        transform: translateY(-20px); /* 🔥 lo sube visualmente */
+        transform: translateY(clamp(-5px, -3vw, -15px));
     }
 }
 

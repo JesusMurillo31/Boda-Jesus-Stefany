@@ -137,3 +137,16 @@ function abrirFormulario(){
 function cerrarFormulario(){
     document.getElementById("modalFormulario").classList.remove("activo");
 }
+
+// Boton de nota de lluvia de sobres
+const botonSobres = document.getElementsByClassName("botonSobres");
+const SobresNota = document.getElementById("SobresNota");
+const CerrarNota = document.getElementById("CerrarNota");
+
+botonSobres.onclick = () => {
+  SobresNota.style.display = "block";
+};
+
+CerrarNota.onclick = () => {
+  SobresNota.style.display = "none";
+};

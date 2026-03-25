@@ -584,6 +584,60 @@ img{
     margin-top: 50px;
 }
 
+.Ventana{
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:1000;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.6);
+    justify-content:center;
+    align-items:center;
+}
+
+.VentanaContenido{
+    background: white;
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 10px;
+    position:relative;
+}
+
+.CerrarNota{
+    position:absolute;
+    right:15px;
+    top:10px;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.botonSobres{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#111;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    box-shadow: 0 0 6px 2px rgba(0,0,0,0.55);
+    cursor: pointer;
+}
+
+.botonSobres:hover {
+  background-color: #333;
+}
+
+.botonSobres:active {
+  transform: scale(0.97);
+}
+
 /* Confirmacion para invitados*/
 .Confirmacion{
     padding: 0px;

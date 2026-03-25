@@ -526,6 +526,30 @@ img{
     animation-delay: .15s;
 }
 
+.Mesa_De_Regalos{
+    text-align: center;
+}
+
+.Mesa_De_Regalos h2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 45px;
+    margin-bottom: 0px;
+}
+
+.Mesa_De_Regalos p{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+.Icono_Liverpool{
+    display: flex;
+    margin: -50px auto;
+    width: 100px;           /* tamaño del icono */
+    height: auto;
+    margin-top: 0px;
+}
+
 /* Confirmacion para invitados*/
 .Confirmacion{
     padding: 0px;

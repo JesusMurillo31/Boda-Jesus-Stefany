@@ -124,12 +124,12 @@ body{
 /* Nombre de los novios de portada */
 .Titulo_Cabezera{
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    z-index: 2;
+    z-index: 5;
 }
 
 .Titulo_Cabezera h1{
@@ -415,29 +415,34 @@ img{
 
 /* Contador de dias que faltan para la boda */
 .contador-wrapper{
+    background-color: #000;
     text-align: center;
 }
 
 .contador-wrapper h2{
     font-family: 'Cormorant Garamond', serif;
-    font-size: 40px;
+    color: #eee;
+    font-size: 25px;
     margin-bottom: 0px;
 }
 
 .contador{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     font-family: 'Italic', serif;
     display: flex;
-    gap: clamp(10px, 4vw, 40px);
+    gap: clamp(6px, 2vw, 20px);
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     flex-wrap: nowrap;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
 
 .contador .bloque{
-    min-width: clamp(50px, 18vw, 90px);
-    padding: clamp(8px, 2vw, 14px);
+    flex: 0 0 auto;
+    min-width: clamp(45px, 20vw, 70px);
+    padding: clamp(6px, 1.5vw, 10px);
     border: 1px solid rgba(0,0,0,.08);
     border-radius: 12px;
     box-shadow: 0 6px 14px rgba(0,0,0,.06);
@@ -445,7 +450,7 @@ img{
 
 .contador .valor{
     display: block;
-    font-size: clamp(22px, 5vw, 40px);
+    font-size: clamp(18px, 5vw, 32px);
     font-weight: 700;
     line-height: 1;
     color: #eee;
@@ -453,7 +458,7 @@ img{
 }
 
 .contador small{
-    font-size: clamp(10px, 2.5vw, 14px);
+    font-size: clamp(9px, 2vw, 12px);
     display: block;
     margin-top: 6px;
     color: #eee;
@@ -467,7 +472,7 @@ img{
     margin-top: 16px;
     font-size: clamp(50px, 3.8vw, 20px);
     font-weight: 600;
-    color: #2e3326;
+    color: #eee;
 }
 
 /* Aparición suave */
@@ -547,6 +552,36 @@ img{
     border:none;
 }
 
+.scroll-indicator{
+    font-size: 10px;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 1s;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    z-index: 3;
+}
+
+.scroll-indicator span{
+    margin-top: 0px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 4px solid #ffffff;
+    border-right: 4px solid #ffffff;
+    transform: rotate(45deg);
+    animation: scrollAnim 1.8s infinite;
+    opacity: 0.8;
+}
+
+.scroll-indicator span:nth-child(2){
+    animation-delay: 0.2s;
+}
+
 /* Pie de pagina final */
 .Pie_de_pagina{
     background-color: #000;
@@ -557,6 +592,21 @@ img{
 
 .Pie_de_pagina p{
     font-size: 15px;
+}
+
+/* Animación */
+@keyframes scrollAnim{
+    0%{
+        transform: rotate(45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(45deg) translate(5px, 5px);
+        opacity: 0;
+    }
 }
 
 /* Zoom para foto de portada en dispositivos móviles */
@@ -632,7 +682,16 @@ img{
     }
 
     .contador{
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .contador .valor{
+        font-size: 20px;
+    }
+
+    .contador small{
+        font-size: 10px;
     }
 }
 

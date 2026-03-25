@@ -46,48 +46,53 @@
                 <div class="Titulo_Cabezera">
                     <h1>Nuestra Boda</h1>
                     <p>J & S</p>
-                
 
-                <!-- Cuenta Regresiva -->
-                <section class="section contador-wrapper" aria-labelledby="ttl-contador">
-                    <h2 id="ttl-contador">Faltan</h2>
-
-                    <!-- Contador -->
-                    <div id="contador"
-                        class="contador"
-                        role="timer"
-                        aria-live="polite"
-                        data-fecha="2026-12-18"
-                        data-hora="16:00"
-                        data-zona="local">
-            
-                        <!-- Bloque Dias -->
-                        <div class="bloque">
-                            <span class="valor" id="cd-d">--</span>
-                            <small>Días</small>
-                        </div>
-                
-                        <!-- Bloque Horas -->
-                        <div class="bloque">
-                            <span class="valor" id="cd-h">--</span>
-                            <small>Horas</small>
-                        </div>
-                
-                        <!-- Bloque Minutos -->
-                        <div class="bloque">
-                            <span class="valor" id="cd-m">--</span>
-                            <small>Min</small>
-                        </div>
-                
-                        <!-- Bloque Segundos -->
-                        <div class="bloque">
-                            <span class="valor" id="cd-s">--</span>
-                            <small>Seg</small>
-                        </div>
+                    <div class="scroll-indicator">
+                        <h2>¡Desliza!</h2>
+                        <span></span>
+                        <span></span>
                     </div>
-                </section>
                 </div>
             </div>
+
+            <!-- Cuenta Regresiva -->
+            <section class="section contador-wrapper" aria-labelledby="ttl-contador">
+                <h2 id="ttl-contador">¡Para el gran dia faltan!</h2>
+
+                <!-- Contador -->
+                <div id="contador"
+                    class="contador"
+                    role="timer"
+                    aria-live="polite"
+                    data-fecha="2026-12-18"
+                    data-hora="16:00"
+                    data-zona="local">
+            
+                    <!-- Bloque Dias -->
+                    <div class="bloque">
+                        <span class="valor" id="cd-d">--</span>
+                        <small>Días</small>
+                    </div>
+                
+                    <!-- Bloque Horas -->
+                    <div class="bloque">
+                        <span class="valor" id="cd-h">--</span>
+                        <small>Horas</small>
+                    </div>
+                
+                    <!-- Bloque Minutos -->
+                    <div class="bloque">
+                        <span class="valor" id="cd-m">--</span>
+                        <small>Min</small>
+                    </div>
+                
+                    <!-- Bloque Segundos -->
+                    <div class="bloque">
+                        <span class="valor" id="cd-s">--</span>
+                        <small>Seg</small>
+                    </div>
+                </div>
+            </section>
 
             <!-- Mensaje cuando llegue el gran día -->
             <p id="contador-msg" class="contador-msg" hidden>¡Llegó nuestro gran día! 💍🎉</p>

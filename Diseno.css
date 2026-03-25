@@ -544,8 +544,9 @@ img{
 
 .Icono_Liverpool{
     display: flex;
-    margin: -50px auto;
-    width: 100px;           /* tamaño del icono */
+    border: #000 solid 1px;
+    margin: 0px auto;
+    width: 180px;           /* tamaño del icono */
     height: auto;
     margin-top: 0px;
 }

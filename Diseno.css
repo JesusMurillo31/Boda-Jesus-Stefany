@@ -172,6 +172,24 @@ body{
     background:#000;
 }
 
+/* Seccion Novios */
+.Novios{
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.Novios h2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.Novios p{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    margin-top: -25px;
+}
+
 /* Seccion Padres */
 .Padres{
     padding-top: 20px;
@@ -216,22 +234,39 @@ body{
     margin-top: -25px;
 }
 
-/* Seccion Novios */
-.Novios{
-    padding: 0px;
+/* Seccion Padrinos */
+.Padrinos{
+    align-items: center;
+    text-align: center;
+    padding: 20px;
     margin-bottom: 0px;
 }
 
-.Novios h2{
+.Padrinos h2{
     font-family: 'Great Vibes', cursive;
     font-size: 45px;
-    margin-bottom: 50px;
 }
 
-.Novios p{
+.Padrinos p{
     font-family: 'Cormorant Garamond', serif;
     font-size: 25px;
     margin-top: -25px;
+}
+
+.Icono_Lazo{
+    margin: -10px auto -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Ajusta según necesites */
+}
+
+.Icono_Velacion{
+    margin: -10px auto -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Ajusta según necesites */
 }
 
 /* Seccion Galeria */

@@ -542,10 +542,35 @@ img{
     margin-top: 0px;
 }
 
+.Regalos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap; /* importante para responsive */
+}
+
+.Liverpool, .Sobres{
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+
+.Liverpool p{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+.Sobres p{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    margin-top: 0px;
+}
+
 .Icono_Liverpool{
     display: flex;
     border: #000 solid 1px;
-    margin: 0px auto 10px;
+    margin: 0px auto 20px;
     width: 180px;           /* tamaño del icono */
     height: auto;
     margin-top: 0px;
@@ -553,10 +578,10 @@ img{
 
 .Icono_Sobres{
     display: flex;
-    margin: 0px auto 10px;
+    margin: 0px auto 0px;
     width: 180px;           /* tamaño del icono */
     height: auto;
-    margin-top: 0px;
+    margin-top: 50px;
 }
 
 /* Confirmacion para invitados*/

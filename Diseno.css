@@ -551,6 +551,14 @@ img{
     margin-top: 0px;
 }
 
+.Icono_Sobres{
+    display: flex;
+    margin: 0px auto 10px;
+    width: 180px;           /* tamaño del icono */
+    height: auto;
+    margin-top: 0px;
+}
+
 /* Confirmacion para invitados*/
 .Confirmacion{
     padding: 0px;

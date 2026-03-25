@@ -693,6 +693,11 @@ img{
     .contador small{
         font-size: 10px;
     }
+
+    .scroll-indicator{
+        margin-top: 5px; /* 🔥 menos espacio */
+        transform: translateY(-10px); /* 🔥 lo sube visualmente */
+    }
 }
 
 /* Animación para el contador */

@@ -1,4 +1,4 @@
-
+// ====== Script que crea el mensaje y boton de bienvenida ======
 document.body.classList.add("modal-activo");
 function entrarInvitacion(){
 
@@ -17,6 +17,7 @@ function entrarInvitacion(){
 
 }
 
+// ============ Reproduccion de musica ============
 var audio = document.getElementById("musica");
 var boton = document.getElementById("botonMusica");
 
@@ -33,7 +34,7 @@ function toggleMusica(){
 
 }
 
-// ====== Movimiento de slides de galeria ======
+// ============ Movimiento de slides de galeria ============
 const slides = document.querySelector(".slides_galeria");
 const slideList = document.querySelectorAll(".slide");
 
@@ -56,7 +57,7 @@ function moverSlide(direccion){
   slides.style.transform = `translateX(-${index * 100}%)`;
 }
 
-// ====== Cuenta regresiva elegante ======
+// ============ Cuenta regresiva elegante ============
 (function(){
   const $ = (sel) => document.querySelector(sel);
   const el = $('#contador');
@@ -129,16 +130,17 @@ function moverSlide(direccion){
   });
 })();
 
-  // Abrir formulario de confirmacion
+// ============ Abrir formulario de confirmacion ============
 function abrirFormulario(){
     document.getElementById("modalFormulario").classList.add("activo");
 }
 
+// ============ Cierra formulario de confirmacion ============
 function cerrarFormulario(){
     document.getElementById("modalFormulario").classList.remove("activo");
 }
 
-// Boton de nota de lluvia de sobres
+// ============ Boton de lluvia de sobres ============
 const botonSobres = document.getElementsByClassName("botonSobres");
 const SobresNota = document.getElementById("SobresNota");
 const CerrarNota = document.getElementById("CerrarNota");

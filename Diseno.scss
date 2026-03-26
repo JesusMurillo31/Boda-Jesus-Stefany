@@ -1,0 +1,88 @@
+// ================================================
+// Variables
+// ================================================
+$font-titulos: 'Great Vibes', cursive;
+$font-texto: 'Cormorant Garamond', serif;
+
+$size-titulos: 45px;
+$size-texto: 25px;
+$size-boton: 20px;
+
+$color-grisclaro: #e4e4e4;
+$color-blanco: #fff;
+$color-negro: #000;
+
+$shadow-titulo-pc: 4px 4px 0 $color-negro;
+$shadow-titulo-pc: 3px 3px 0 $color-negro;
+
+// ================================================
+// Bienvenida
+// ================================================
+#Bienvenida{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+}
+
+.modal-bienvenida{
+    background: $color-blanco;
+    padding: 40px 50px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0 0.3);
+
+    h1{
+        font-family: $font-titulos;
+        font-size: $size-titulos;
+        margin-bottom: 25px;
+    }
+
+    h2{
+        font-family: $font-titulos;
+        font-size: $size-titulos;
+        margin-bottom: 5px;
+    }
+
+    p{
+        font-family: $font-texto;
+        font-size: $size-texto;
+        margin-bottom: 25px;
+    }
+
+    button{
+        font-family: $font-texto;
+        font-size: $size-texto;
+        padding: 12px 30px;
+        border-radius: 25px;
+        border: 2px solid $color-negro;
+        font-weight: bold;
+        box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.55);
+        cursor: pointer;
+    }
+}
+
+body.modal-activo{
+    overflow: hidden;
+}
+
+// ================================================
+// Body / Cuerpo
+// ================================================
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+    background: $color-grisclaro;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+// ================================================
+// Boton Musica
+// ================================================

@@ -58,6 +58,7 @@ $shadow-titulo-movil: 3px 3px 0 $color-negro;
     button{
         font-family: $font-texto;
         font-size: $size-texto;
+        color: $color-negro;
         padding: 12px 30px;
         border-radius: 25px;
         border: 2px solid $color-negro;
@@ -661,6 +662,7 @@ body{
     background: $color-negro;
     color: $color-blanco;
     text-decoration: none;
+    border: none;
     border-radius: 5px;
     box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.55);
     cursor: pointer;

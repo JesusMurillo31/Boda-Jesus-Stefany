@@ -522,20 +522,26 @@ body {
   padding: 12px 25px;
   font-family: "Cormorant Garamond", serif;
   font-size: 20px;
-  background: #000;
+  background-color: #000;
   color: #fff;
   text-decoration: none;
-  border: none;
+  border: 0;
   border-radius: 5px;
   box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.55);
   cursor: pointer;
   transition: background 0.2s, transform 0.1s;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 .botonSobres:hover {
   background: #000;
 }
 .botonSobres:active {
   transform: scale(0.97);
+  background-color: #111;
 }
 
 .Confirmacion {

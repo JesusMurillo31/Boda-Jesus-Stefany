@@ -126,6 +126,7 @@ body{
     position: relative;
     height: 100vh;
     overflow: hidden;
+    background-color: $color-negro;
 
     .foto-portada{
         width: 100%;
@@ -144,7 +145,7 @@ body{
             rgba(0, 0, 0, 0.4) 40%,
             rgba(0, 0, 0, 0.6) 60%,
             rgba(0, 0, 0, 0.8) 80%,
-            rgba(0, 0, 0, 1) 100
+            rgba(0, 0, 0, 1) 100%
         );
     }
 }
@@ -460,6 +461,7 @@ body{
 .contador-wrapper{
     background-color: $color-negro;
     text-align: center;
+    margin-top: 0;
 
     h2{     
         font-family: $font-texto;
@@ -475,24 +477,43 @@ body{
         flex-wrap: nowrap;
         gap: clamp(6px, 2vw, 20px);
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
         font-family: 'Italic', serif;
         margin-bottom: 0;
         padding-bottom: 0;
+
+        &::-webkit-scrollbar{
+            height: 0;
+            display: none;
+        }
 
         .bloque{
             flex: 0 0 auto;
             min-width: clamp(45px, 20vw, 70px);
             padding: clamp(6px, 1.5vw, 10px);
             border-radius: 12px;
-            border: 1px solid rgba(0, 0, 0, 0.08);
+            background-color: transparent;
             box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
             opacity: 0; // Aparición suave
             transform: translateY(8px);
             animation: fadeUp 0.6s ease forwards;
-            &:nth-child(2) { animation-delay: .05s; }
-            &:nth-child(3) { animation-delay: .10s; }
-            &:nth-child(4) { animation-delay: .15s; }
+
+            &:first-child{
+                border-top: none;
+            }
+
+            &:nth-child(2){
+                animation-delay: .05s;
+            }
+
+            &:nth-child(3){
+                animation-delay: .10s;
+            }
+
+            &:nth-child(4){
+                animation-delay: .15s;
+            }
         }
 
         .valor{

@@ -1,852 +1,707 @@
-#Bienvenida{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,0.55);
-    backdrop-filter:blur(3px);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    z-index:3000;
+#Bienvenida {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
 }
 
-.modal-bienvenida{
-    background:white;
-    padding:40px 50px;
-    border-radius:15px;
-    text-align:center;
-    max-width:400px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+.modal-bienvenida {
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.modal-bienvenida h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+.modal-bienvenida h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 45px;
+  margin-bottom: 5px;
+}
+.modal-bienvenida p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+.modal-bienvenida button {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  padding: 12px 30px;
+  border-radius: 25px;
+  border: 2px solid #000;
+  font-weight: bold;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
 }
 
-.modal-bienvenida h2{
-    font-family:'Great Vibes', cursive;
-    font-size:50px;
-    margin-bottom:5px;
+body.modal-activo {
+  overflow: hidden;
 }
 
-.modal-bienvenida h1{
-    font-family:'Great Vibes', cursive;
-    font-size: 40px;
-    margin-bottom: 25px;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+  background: #e4e4e4;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-.modal-bienvenida p{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 25px;
-    margin-bottom: 25px;
+#botonMusica {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 14px 25px;
+  background: rgba(30, 30, 30, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  color: #fff;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.1s;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
-
-.modal-bienvenida button{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 25px;
-    padding:12px 30px;
-    border-radius:25px;
-    border:2px solid #555;
-    background:white;
-    font-weight:bold;
-    box-shadow: 0 0 6px 2px rgba(0,0,0,0.55);
-    cursor: pointer;
+#botonMusica:hover {
+  background: rbga(50, 50, 50, 0.7);
+  border-color: rgba(255, 255, 255, 0.28);
+  transform: scale(1.03);
 }
-
-body.modal-activo{
-    overflow: hidden;
-}
-
-/* Cuerpo del HTML */
-body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    text-align:center;
-    background:#e4e4e4;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-#botonMusica{
-    position: fixed;
-    Top:10px;
-    left: 10px;
-    padding: 14px 25px;
-    background: rgba(30, 30, 30, 0.55);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* Safari */
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 50px;
-    color: #ffffff;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 15px;
-    font-weight: 900;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background 0.2s, border-color 0.2s, transform 0.1s;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-}
-
-#botonMusica:hover{
-    background: rgba(50, 50, 50, 0.7);
-    border-color: rgba(255, 255, 255, 0.28);
-    transform: scale(1.03);
-}
-
 #botonMusica:active {
-    transform: scale(0.97);
+  transform: scale(0.97);
 }
 
-/* Imagen de Portada */
-.Imagen_Cabezera{
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
+.Imagen_Cabezera {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.Imagen_Cabezera .foto-portada {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1.05);
+  animation: zoomPortada 25s ease-in-out infinite alternate;
+}
+.Imagen_Cabezera .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.8) 80%, rgb(0, 0, 0) 100);
 }
 
-.foto-portada{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scale(1.05);
-    animation: zoomPortada 25s ease-in-out infinite alternate;
+.Titulo_Cabezera {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 5;
+}
+.Titulo_Cabezera h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: "Great Vibes", cursive;
+  text-shadow: 4px 4px 0 #000;
+  white-space: nowrap;
+  margin: 0;
+}
+.Titulo_Cabezera p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  text-shadow: 4px 4px 0 #000;
+  white-space: nowrap;
+  margin: 0;
 }
 
-.overlay{
-    position:absolute;
-    inset:0;
-    background:linear-gradient(
-        to bottom,
-        rgba(0,0,0,0.2) 20%,
-        rgba(0,0,0,0.4) 40%,
-        rgba(0,0,0,0.6) 60%,
-        rgba(0,0,0,0.8) 80%,
-        rgba(0,0,0,1) 100%
-    );
+.Mensaje_de_los_novios {
+  padding: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
 }
 
-/* Nombre de los novios de portada */
-.Titulo_Cabezera{
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    z-index: 5;
+.Novios {
+  padding: 0;
+  margin-bottom: 0;
+}
+.Novios h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 45px;
+  margin-bottom: 50px;
+}
+.Novios p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin-top: -25px;
 }
 
-.Titulo_Cabezera h1{
-    font-family: 'Great Vibes', cursive;
-    font-size: 70px;
-    text-shadow: 4px 4px 0px black;
-    white-space: nowrap;
-    margin: 0px;
+.Padres {
+  padding-top: 20px;
+  padding-bottom: 1px;
+}
+.Padres .Padres_Novio h2,
+.Padres .Padres_Novia h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 45px;
+  margin-top: 10px;
+}
+.Padres .Padres_Novio p,
+.Padres .Padres_Novia p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin-top: -25px;
+}
+.Padres .Imagen_Novio,
+.Padres .Imagen_Novia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }
 
-.Titulo_Cabezera p{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 50px;
-    text-shadow: 4px 4px 0px black;
-    white-space: nowrap;
-    margin: 0px;
+.Padrinos {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 0;
+}
+.Padrinos h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 45px;
+}
+.Padrinos p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin-top: -25px;
+}
+.Padrinos .Icono_Lazo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -10px auto -40px;
+  height: 100px;
+}
+.Padrinos .Icono_Velacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -60px auto;
+  height: 150px;
 }
 
-/* Mensaje de los novios para los invitados */
-.Mensaje_de_los_novios{
-    padding: 0px;
-    font-size: 25px;
-    font-family: 'Cormorant Garamond', serif;
+.Galeria {
+  padding: 10px;
+  margin-bottom: 0;
+}
+.Galeria h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 45px;
+  margin: 0;
+}
+.Galeria .slider {
+  position: relative;
+  max-width: 500px;
+  margin: 40px auto;
+  overflow: hidden;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
+}
+.Galeria .slides_galeria {
+  display: flex;
+  gap: 0;
+  transition: transform 1s ease;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+.Galeria .slide {
+  flex: 0 0 100%;
+  width: 100%;
+  aspect-ratio: 2/3;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin: 0;
+}
+.Galeria img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.Galeria .boton_galeria {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 28px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+}
+.Galeria .boton_galeria:hover {
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.55);
+}
+.Galeria .boton_galeria:active {
+  transform: translateY(-50%) scale(0.9);
+}
+.Galeria .boton_galeria.atras {
+  left: 10px;
+}
+.Galeria .boton_galeria.siguiente {
+  right: 10px;
 }
 
-/* Divisor de secciones */
-.divisor{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin: 40px auto;
-    width: 90%;
-    max-width: 100%;
-    gap: 10px;
+.section {
+  padding: 20px;
 }
-
-.linea{
-    flex: 1;
-    height: 1px;
-    background:#000;
-}
-
-/* Seccion Novios */
-.Novios{
-    padding: 0px;
-    margin-bottom: 0px;
-}
-
-.Novios h2{
-    font-family: 'Great Vibes', cursive;
-    font-size: 45px;
-    margin-bottom: 50px;
-}
-
-.Novios p{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 25px;
-    margin-top: -25px;
-}
-
-/* Seccion Padres */
-.Padres{
-    padding-top: 20px;
-    padding-bottom: 1px;
-}
-
-.Imagen_Novio{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px; /* Ajusta según necesites */
-}
-
-.Padres_Novio h2{
-    font-family: 'Great Vibes', cursive;
-    font-size: 45px;
-    margin-top: 10px;
-}
-
-.Padres_Novio p{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 25px;
-    margin-top: -25px;
-}
-
-.Imagen_Novia{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px; /* Ajusta según necesites */
-}
-
-.Padres_Novia h2{
-    font-family: 'Great Vibes', cursive;
-    font-size: 45px;
-    margin-top: 10px;
-}
-
-.Padres_Novia p{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 25px;
-    margin-top: -25px;
-}
-
-/* Seccion Padrinos */
-.Padrinos{
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 0px;
-}
-
-.Padrinos h2{
-    font-family: 'Great Vibes', cursive;
-    font-size: 45px;
-}
-
-.Padrinos p{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 25px;
-    margin-top: -25px;
-}
-
-.Icono_Lazo{
-    margin: -10px auto -40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px; /* Ajusta según necesites */
-}
-
-.Icono_Velacion{
-    margin: -60px auto -60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px; /* Ajusta según necesites */
-}
-
-/* Seccion Galeria */
-.Galeria{
-    padding: 10px;
-    margin-bottom: 0px;
-}
-
-.Galeria h2{
-    font-family: 'Great Vibes', cursive;
-    font-size: 45px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-.slider{
-    position: relative;
-    max-width: 500px;
-    margin: 40px auto;
-    overflow: hidden;
-    box-shadow: 0 0 6px 2px rgba(0,0,0,0.80);
-}
-
-.boton_galeria{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: transform .2s;
-    background: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    font-size: 28px;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 50%;
-    z-index: 10;
-}
-
-.boton_galeria:active{
-    transform: scale(0.9);
-}
-
-.boton_galeria:hover{
-    background:rgba(0,0,0,0.7);
-    box-shadow: 0 0 6px 2px rgba(0,0,0,0.55);
-}
-
-.atras{
-    left:10px;
-}
-
-.siguiente{
-    right:10px;
-}
-
-.slides_galeria{
-    display: flex;
-    transition: transform 1s ease;
-    will-change: transform;
-    gap: 0;                      /* sin espacios entre slides */
-    backface-visibility: hidden; /* ayuda con subpíxeles en algunos navegadores */
-    transform: translateZ(0);
-}
-
-.slide{
-    margin: 0;
-    width:100%;
-    flex:0 0 100%;
-    aspect-ratio: 2 / 3;
-    height:auto;
-    object-fit:cover;
-    display: block;
-}
-
-img{
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Secciones detalles del evento */
-.section{
-    padding: 20px;
-}
-
 .section h2 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 45px;
-    margin-bottom: 30px;
-    margin-top: 0px;
+  font-family: "Great Vibes", cursive;
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
-
 .section h3 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 45px;
-    margin-bottom: 20px;
+  font-family: "Great Vibes", cursive;
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
-
 .section p {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 25px;
-    margin-top: -25px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin-top: -25px;
 }
 
-/* Eventos */
-.evento{
-    background: white;
-    padding: 40px;
-    margin: 0 auto 30px auto;
-    border-radius: 10px;
-    max-width: 500px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.evento {
+  background: #fff;
+  padding: 40px;
+  margin: 0 auto 30px;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.evento h3 {
+  margin-bottom: 40px;
+}
+.evento .Imagen_Ceremonia,
+.evento .Imagen_Recepcion {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
+}
+.evento .Icono_Iglesia {
+  display: flex;
+  margin: -50px auto;
+  height: auto;
+  width: 100px;
+  margin-top: 0;
+}
+.evento .Icono_Casino {
+  display: flex;
+  margin: -50px auto;
+  height: auto;
+  width: 100px;
+  margin-top: 20px;
+}
+.evento .Icono_Vestimenta {
+  display: flex;
+  margin: -50px auto;
+  height: auto;
+  width: 60px;
+  margin-top: 0;
 }
 
-.evento h3{
-    margin-bottom: 40px; 
+.boton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
 }
-
-.Imagen_Ceremonia{
-    max-width: 100%;
-    display: block;
-    margin: 0px auto;
-    height: auto;
-    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
-}
-
-.Icono_Iglesia{
-    display: flex;
-    margin: -50px auto;
-    width: 100px;           /* tamaño del icono */
-    height: auto;
-    margin-top: 0px;
-}
-
-.Imagen_Recepcion{
-    max-width: 100%;
-    display: block;
-    margin: 0px auto;
-    height: auto;
-    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
-}
-
-.Icono_Casino{
-    display: flex;
-    margin: -50px auto;
-    width: 60px;           /* tamaño del icono */
-    height: auto;
-    margin-top: 20px;
-}
-
-.Icono_Vestimenta{
-    display: flex;
-    margin: -50px auto;
-    width: 60px;           /* tamaño del icono */
-    height: auto;
-    margin-top: 0px;
-}
-
-/* Botones (Todos) */
-.boton{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
-    background:#111;
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
-    box-shadow: 0 0 6px 2px rgba(0,0,0,0.55);
-    cursor: pointer;
-}
-
 .boton:hover {
-  background-color: #333;
+  background: #333;
 }
-
 .boton:active {
   transform: scale(0.97);
 }
 
-/* Contador de dias que faltan para la boda */
-.contador-wrapper{
-    background-color: #000;
-    text-align: center;
+.contador-wrapper {
+  background-color: #000;
+  text-align: center;
+}
+.contador-wrapper h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  color: #eee;
+  margin-bottom: 0;
+}
+.contador-wrapper .contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: clamp(6px, 2vw, 20px);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  font-family: "Italic", serif;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.contador-wrapper .contador .bloque {
+  flex: 0 0 auto;
+  min-width: clamp(45px, 20vw, 70px);
+  padding: clamp(6px, 1.5vw, 10px);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+  opacity: 0;
+  transform: translateY(8px);
+  animation: fadeUp 0.6s ease forwards;
+}
+.contador-wrapper .contador .bloque:nth-child(2) {
+  animation-delay: 0.05s;
+}
+.contador-wrapper .contador .bloque:nth-child(3) {
+  animation-delay: 0.1s;
+}
+.contador-wrapper .contador .bloque:nth-child(4) {
+  animation-delay: 0.15s;
+}
+.contador-wrapper .contador .valor {
+  display: block;
+  font-size: clamp(18px, 5vw, 32px);
+  font-weight: 700;
+  line-height: 1;
+  color: #eee;
+  font-variant-numeric: tabular-nums;
+}
+.contador-wrapper .contador small {
+  display: block;
+  margin-top: 6px;
+  font-size: clamp(9px, 2vw, 12px);
+  color: #eee;
+  letter-spacing: 0.3px;
+}
+.contador-wrapper .contador-msg {
+  margin-top: 16px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(20px, 3.8vw, 50px);
+  font-weight: 600;
+  color: #eee;
 }
 
-.contador-wrapper h2{
-    font-family: 'Cormorant Garamond', serif;
-    color: #eee;
-    font-size: 25px;
-    margin-bottom: 0px;
+.Mesa_De_Regalos {
+  text-align: center;
+}
+.Mesa_De_Regalos h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 45px;
+  margin-bottom: 0;
+}
+.Mesa_De_Regalos p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin-top: 0;
+}
+.Mesa_De_Regalos .Regalos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.Mesa_De_Regalos .Liverpool,
+.Mesa_De_Regalos .Sobres {
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+.Mesa_De_Regalos .Liverpool p,
+.Mesa_De_Regalos .Sobres p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin-top: 0;
+}
+.Mesa_De_Regalos .Icono_Liverpool {
+  display: flex;
+  width: 180px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+}
+.Mesa_De_Regalos .Icono_Sobres {
+  display: flex;
+  width: 180px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
-.contador{
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    font-family: 'Italic', serif;
-    display: flex;
-    gap: clamp(6px, 2vw, 20px);
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+.Ventana {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+.Ventana .VentanaContenido {
+  position: relative;
+  background: #fff;
+  margin: auto;
+  padding: 10px;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 10px;
+}
+.Ventana .CerrarNota {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
 }
 
-.contador .bloque{
-    flex: 0 0 auto;
-    min-width: clamp(45px, 20vw, 70px);
-    padding: clamp(6px, 1.5vw, 10px);
-    border: 1px solid rgba(0,0,0,.08);
-    border-radius: 12px;
-    box-shadow: 0 6px 14px rgba(0,0,0,.06);
+.botonSobres {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
 }
-
-.contador .valor{
-    display: block;
-    font-size: clamp(18px, 5vw, 32px);
-    font-weight: 700;
-    line-height: 1;
-    color: #eee;
-    font-variant-numeric: tabular-nums;  /* columnas alineadas */
-}
-
-.contador small{
-    font-size: clamp(9px, 2vw, 12px);
-    display: block;
-    margin-top: 6px;
-    color: #eee;
-    letter-spacing: .3px;
-}
-
-/* Mensaje del día del evento */
-.contador-msg{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 25;
-    margin-top: 16px;
-    font-size: clamp(50px, 3.8vw, 20px);
-    font-weight: 600;
-    color: #eee;
-}
-
-/* Aparición suave */
-.contador .bloque{
-    opacity: 0;
-    transform: translateY(8px);
-    animation: fadeUp .6s ease forwards;
-}
-.contador .bloque:nth-child(2){
-    animation-delay: .05s;
-}
-.contador .bloque:nth-child(3){
-    animation-delay: .10s;
-}
-.contador .bloque:nth-child(4){
-    animation-delay: .15s;
-}
-
-.Mesa_De_Regalos{
-    text-align: center;
-}
-
-.Mesa_De_Regalos h2{
-    font-family: 'Great Vibes', cursive;
-    font-size: 45px;
-    margin-bottom: 0px;
-}
-
-.Mesa_De_Regalos p{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 25px;
-    margin-top: 0px;
-}
-
-.Regalos{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    flex-wrap: wrap; /* importante para responsive */
-}
-
-.Liverpool, .Sobres{
-    flex: 1 1 250px;
-    max-width: 300px;
-}
-
-.Liverpool p{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 25px;
-    margin-top: 0px;
-}
-
-.Sobres p{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 25px;
-    margin-top: 0px;
-}
-
-.Icono_Liverpool{
-    display: flex;
-    border: #000 solid 1px;
-    margin: 0px auto 20px;
-    width: 180px;           /* tamaño del icono */
-    height: auto;
-    margin-top: 0px;
-}
-
-.Icono_Sobres{
-    display: flex;
-    margin: 0px auto 0px;
-    width: 180px;           /* tamaño del icono */
-    height: auto;
-    margin-top: 50px;
-}
-
-.Ventana{
-    display:none;
-    position:fixed;
-    inset:0;
-    z-index:1000;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
-    background-color:rgba(0,0,0,0.6);
-    justify-content:center;
-    align-items:center;
-}
-
-.VentanaContenido{
-    background: white;
-    margin: auto;
-    padding: 10px;
-    width: 90%;
-    max-width: 700px;
-    border-radius: 10px;
-    position:relative;
-}
-
-.CerrarNota{
-    position:absolute;
-    right:15px;
-    top:10px;
-    font-size:28px;
-    cursor:pointer;
-}
-
-.botonSobres{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
-    background:#111;
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
-    box-shadow: 0 0 6px 2px rgba(0,0,0,0.55);
-    cursor: pointer;
-}
-
 .botonSobres:hover {
-  background-color: #333;
+  background: #333;
 }
-
 .botonSobres:active {
   transform: scale(0.97);
 }
 
-/* Confirmacion para invitados*/
-.Confirmacion{
-    padding: 0px;
-    margin: 0px;
+.Confirmacion {
+  padding: 0;
+  margin: 0;
+}
+.Confirmacion h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 45px;
+}
+.Confirmacion p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin-top: -15px;
+  padding: 0 1px;
 }
 
-.Confirmacion h2{
-    font-family: 'Great Vibes', cursive;
-    font-size: 45px;
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+.modal.activo {
+  display: flex;
+}
+.modal .modal-contenido {
+  position: relative;
+  background: #fff;
+  margin: auto;
+  padding: 10px;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 10px;
+}
+.modal .cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
 }
 
-.Confirmacion p{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 25px;
-    margin-top: -15px;
-    padding-left: 1px;
-    padding-right: 1px;
+.formulario-iframe {
+  width: 100%;
+  height: 90vh;
+  border: none;
 }
 
-.modal{
-    display:none;
-    position:fixed;
-    inset:0;
-    z-index:1000;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
-    background-color:rgba(0,0,0,0.6);
-    justify-content:center;
-    align-items:center;
+.Pie_de_pagina {
+  background-color: #000;
+  color: #fff;
+  padding: 1px;
+  margin-top: 25px;
+}
+.Pie_de_pagina p {
+  font-size: 15px;
 }
 
-.modal.activo{
-    display:flex;
+.scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  z-index: 3;
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-size: 10px;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 1s;
+}
+.scroll-indicator span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-top: 0;
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+  transform: rotate(45deg);
+  animation: scrollAnim 1.8s infinite;
+  opacity: 0.8;
+}
+.scroll-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
 }
 
-.modal-contenido{
-    background: white;
-    margin: auto;
-    padding: 10px;
-    width: 90%;
-    max-width: 700px;
-    border-radius: 10px;
-    position:relative;
+.divisor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 100%;
+  gap: 10px;
+}
+.divisor .linea {
+  flex: 1px;
+  height: 1px;
+  background: #000;
 }
 
-.cerrar{
-    position:absolute;
-    right:15px;
-    top:10px;
-    font-size:28px;
-    cursor:pointer;
+@keyframes scrollAnim {
+  0% {
+    transform: rotate(45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(45deg) translate(5px, 5px);
+    opacity: 0;
+  }
 }
-
-.formulario-iframe{
-    width:100%;
-    height:90vh;
-    border:none;
+@keyframes zoomPortada {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1.15);
+  }
 }
-
-.scroll-indicator{
-    font-size: 10px;
-    animation: fadeIn 1s ease forwards;
-    animation-delay: 1s;
-    margin-top: 50px;
-    margin-bottom: 0px;
+@media (max-width: 600px) {
+  .modal-bienvenida {
+    padding: 25px 20px;
+    max-width: 300px;
+  }
+  .modal-bienvenida h2 {
+    font-size: 50px;
+  }
+  .modal-bienvenida h1 {
+    font-size: 35px;
+  }
+  .modal-bienvenida p {
+    font-size: 20px;
+  }
+  .modal-bienvenida button {
+    padding: 10px 22px;
+    font-size: 20px;
+  }
+  .Titulo_Cabezera h1 {
+    font-size: 60px;
+    text-shadow: 3px 3px 0 #000;
+  }
+  .Titulo_Cabezera p {
+    font-size: 50px;
+    text-shadow: 3px 3px 0 #000;
+  }
+  .slider {
+    max-width: 92vw;
+    margin: 24px auto;
+    overflow: hidden;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
+  }
+  .slides_galeria {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    position: relative;
-    z-index: 3;
+    transition: transform 1s ease;
+  }
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+    height: 450px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .modal-contenido {
+    width: 95%;
+    padding: 10px;
+  }
+  .formulario-iframe {
+    height: 70vh;
+  }
+  .contador {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .contador .valor {
+    font-size: 20px;
+  }
+  .contador small {
+    font-size: 10px;
+  }
+  .scroll-indicator {
+    margin-top: 8px;
+  }
 }
-
-.scroll-indicator span{
-    margin-top: 0px;
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-bottom: 4px solid #ffffff;
-    border-right: 4px solid #ffffff;
-    transform: rotate(45deg);
-    animation: scrollAnim 1.8s infinite;
-    opacity: 0.8;
-}
-
-.scroll-indicator span:nth-child(2){
-    animation-delay: 0.2s;
-}
-
-/* Pie de pagina final */
-.Pie_de_pagina{
-    background-color: #000;
-    color: white;
-    padding: 1px;
-    margin-top: 25px;
-}
-
-.Pie_de_pagina p{
-    font-size: 15px;
-}
-
-/* Animación */
-@keyframes scrollAnim{
-    0%{
-        transform: rotate(45deg) translate(0, 0);
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        transform: rotate(45deg) translate(5px, 5px);
-        opacity: 0;
-    }
-}
-
-/* Zoom para foto de portada en dispositivos móviles */
-@keyframes zoomPortada{
-    from{
-        transform:scale(1.05);
-    }
-    to{
-        transform:scale(1.15);
-    }
-}
-
-/* Ayudas visuales para dispositivos móviles */
-@media (max-width:600px){
-    .modal-bienvenida{
-        padding:25px 20px;
-        max-width:300px;
-    }
-
-    .modal-bienvenida h2{
-        font-size:50px;
-    }
-
-    .modal-bienvenida h1{
-        font-size:35px;
-    }
-
-    .modal-bienvenida p{
-        font-size:20px;
-    }
-
-    .modal-bienvenida button{
-        padding:10px 22px;
-        font-size:20px;
-    }
-
-    .Titulo_Cabezera h1{
-        font-size:60px;
-        text-shadow:3px 3px 0px black;
-    }
-
-    .Titulo_Cabezera p{
-        font-size:50px;
-        text-shadow:3px 3px 0px black;
-    }
-
-    .slider{
-        max-width:92vw;
-        margin:24px auto;
-        overflow:hidden;
-        box-shadow: 0 0 6px 2px rgba(0,0,0,0.80);
-    }
-
-    .slides_galeria{
-        display:flex;
-        transition:transform 1s ease;
-    }
-
-    .slide{
-        width:100%;
-        flex-shrink:0;
-        height:450px;
-        object-fit:cover;
-    }
-
-    .modal-contenido{
-        width:95%;
-        padding:10px;
-    }
-
-    .formulario-iframe{
-        height:70vh;
-    }
-
-    .contador{
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
-
-    .contador .valor{
-        font-size: 20px;
-    }
-
-    .contador small{
-        font-size: 10px;
-    }
-
-    .scroll-indicator{
-        margin-top: 8px;
-    }
-}
-
-/* Animación para el contador */
-@keyframes fadeUp{
-  to{ opacity:1; transform:none; }
-}
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}/*# sourceMappingURL=Diseno.css.map */

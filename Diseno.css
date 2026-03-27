@@ -149,6 +149,13 @@ body {
   font-size: 25px;
   margin-top: -25px;
 }
+.Novios .Logo_Boda {
+  display: block;
+  max-width: 350px;
+  height: auto;
+  margin: -50px auto -20px;
+  opacity: 0.95;
+}
 
 .Padres {
   padding-top: 20px;

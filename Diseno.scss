@@ -610,7 +610,7 @@ body{
     position: fixed;
     inset: 0;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6);
     justify-content: center;
     align-items: center;
 
@@ -618,10 +618,16 @@ body{
         position: relative;
         background: $color-blanco;
         margin: auto;
-        padding: 10px;
+        padding: 40px 20px 20px;
         width: 90%;
         max-width: 700px;
         border-radius: 10px;
+    }
+
+    &.activo{
+        display: flex;
+        opacity: 1;
+        pointer-events: auto;
     }
 
     .CerrarNota{
@@ -630,6 +636,8 @@ body{
         right: 15px;
         font-size: 28px;
         cursor: pointer;
+        z-index: 10;
+        line-height: 1;
     }
 }
 

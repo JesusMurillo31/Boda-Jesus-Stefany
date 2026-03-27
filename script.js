@@ -141,14 +141,20 @@ function cerrarFormulario(){
 }
 
 // ============ Boton de lluvia de sobres ============
-const botonSobres = document.getElementsByClassName("botonSobres");
+const botonSobres = document.querySelector(".botonSobres");
 const SobresNota = document.getElementById("SobresNota");
-const CerrarNota = document.getElementById("CerrarNota");
+const CerrarNota = SobresNota.querySelector(".CerrarNota");
 
-botonSobres.onclick = () => {
-  SobresNota.style.display = "block";
-};
+botonSobres.addEventListener("click", () => {
+  SobresNota.classList.add("activo");
+});
 
-CerrarNota.onclick = () => {
-  SobresNota.style.display = "none";
-};
+SobresNota.addEventListener("click", (e) => {
+  if (e.target === SobresNota) {
+    SobresNota.classList.remove("activo");
+  }
+});
+
+CerrarNota.addEventListener("click", () => {
+  SobresNota.classList.remove("activo");
+});

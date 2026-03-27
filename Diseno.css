@@ -272,16 +272,17 @@ body {
 
 .section {
   padding: 20px;
+  margin: 0;
 }
 .section h2 {
   font-family: "Great Vibes", cursive;
-  font-size: 25px;
+  font-size: 45px;
   margin-top: 0;
   margin-bottom: 30px;
 }
 .section h3 {
   font-family: "Great Vibes", cursive;
-  font-size: 25px;
+  font-size: 45px;
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -312,21 +313,21 @@ body {
 }
 .evento .Icono_Iglesia {
   display: flex;
-  margin: -50px auto;
+  margin: 0px auto;
   height: auto;
   width: 100px;
   margin-top: 0;
 }
 .evento .Icono_Casino {
   display: flex;
-  margin: -50px auto;
+  margin: 0px auto;
   height: auto;
   width: 100px;
   margin-top: 20px;
 }
 .evento .Icono_Vestimenta {
   display: flex;
-  margin: -50px auto;
+  margin: 0px auto;
   height: auto;
   width: 60px;
   margin-top: 0;

@@ -358,17 +358,18 @@ body{
 // ================================================
 .section{
     padding: 20px;
+    margin: 0;
 
     h2{
         font-family: $font-titulos;
-        font-size: $size-texto;
+        font-size: $size-titulos;
         margin-top: 0;
         margin-bottom: 30px;
     }
 
     h3{
         font-family: $font-titulos;
-        font-size: $size-texto;
+        font-size: $size-titulos;
         margin-top: 0;
         margin-bottom: 20px;
     }
@@ -406,7 +407,7 @@ body{
 
     .Icono_Iglesia{
         display: flex;
-        margin: -50px auto;
+        margin: 0px auto;
         height: auto;
         width: 100px;
         margin-top: 0
@@ -414,7 +415,7 @@ body{
 
     .Icono_Casino{
         display: flex;
-        margin: -50px auto;
+        margin: 0px auto;
         height: auto;
         width: 100px;
         margin-top: 20px;
@@ -422,7 +423,7 @@ body{
 
     .Icono_Vestimenta{
         display: flex;
-        margin: -50px auto;
+        margin: 0px auto;
         height: auto;
         width: 60px;
         margin-top: 0;

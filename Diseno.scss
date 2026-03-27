@@ -658,7 +658,7 @@ body{
     padding: 12px 25px;
     font-family: $font-texto;
     font-size: $size-boton;
-    background: #111;
+    background: $color-negro;
     color: $color-blanco;
     text-decoration: none;
     border-radius: 5px;
@@ -667,7 +667,7 @@ body{
     transition: background 0.2s, transform 0.1s;
 
     &:hover{
-        background: #333;
+        background: $color-negro;
     }
 
     &:active{

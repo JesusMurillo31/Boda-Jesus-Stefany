@@ -442,7 +442,7 @@ body {
 .Mesa_De_Regalos h2 {
   font-family: "Great Vibes", cursive;
   font-size: 45px;
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 .Mesa_De_Regalos p {
   font-family: "Cormorant Garamond", serif;
@@ -480,7 +480,7 @@ body {
   width: 180px;
   height: auto;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .Ventana {

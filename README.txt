@@ -14,4 +14,5 @@
 14. Codigo de vestimenta
 15. Mesa de regalos
 16. Confirmacion por formulario (Lista de confirmados por excel)
-17. Pie de pagina
+17. Linea de tiempo
+18. Pie de pagina

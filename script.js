@@ -117,7 +117,7 @@ function moverSlide(direccion){
 
   // Primer render inmediato y luego cada segundo
   tick();
-  const timer = setInterval(tick, 1000);
+  let timer = setInterval(tick, 1000);
 
   // (Opcional) Pausa si la pestaña no está visible para ahorrar batería
   document.addEventListener('visibilitychange', () => {
@@ -125,7 +125,7 @@ function moverSlide(direccion){
       clearInterval(timer);
     }else{
       tick();
-      setInterval(tick, 1000);
+      timer = setInterval(tick, 1000);
     }
   });
 })();

@@ -844,6 +844,21 @@ body{
 }
 
 //====================================================
+//  Ayudas visuales para PC
+//====================================================
+@media (min-width: 901px){
+    .Imagen_Cabezera{
+        height: 85vh;
+
+        .foto-portada{
+            object-position: center 20%;
+            transform: none;
+            animation: none;
+        }
+    }
+}
+
+//====================================================
 //  Ayudas visuales para dispositivos moviles
 //====================================================
 @media (max-width: 600px){

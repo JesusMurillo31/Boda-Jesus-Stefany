@@ -669,6 +669,17 @@ body {
     transform: scale(1.15);
   }
 }
+@media (min-width: 901px) {
+  .Imagen_Cabezera {
+    height: 85vh;
+  }
+  .Imagen_Cabezera .foto-portada {
+    -o-object-position: center 20%;
+       object-position: center 20%;
+    transform: none;
+    animation: none;
+  }
+}
 @media (max-width: 600px) {
   .modal-bienvenida {
     padding: 25px 20px;

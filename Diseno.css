@@ -78,7 +78,7 @@ body {
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 #botonMusica:hover {
-  background: rbga(50, 50, 50, 0.7);
+  background: rgba(50, 50, 50, 0.7);
   border-color: rgba(255, 255, 255, 0.28);
   transform: scale(1.03);
 }
@@ -117,7 +117,7 @@ body {
 }
 .Titulo_Cabezera h1 {
   font-family: "Great Vibes", cursive;
-  font-size: "Great Vibes", cursive;
+  font-size: 45px;
   text-shadow: 4px 4px 0 #000;
   white-space: nowrap;
   margin: 0;

@@ -110,7 +110,7 @@ body{
         inset 0 1px 0 rgba(255, 255, 255, 0.08);
 
     &:hover{
-        background: rbga(50, 50, 50, 0.7);
+        background: rgba(50, 50, 50, 0.7);
         border-color: rgba(255, 255, 255, 0.28);
         transform: scale(1.03);
     }
@@ -165,7 +165,7 @@ body{
 
     h1{
         font-family: $font-titulos;
-        font-size: $font-titulos;
+        font-size: $size-titulos;
         text-shadow: $shadow-titulo-pc;
         white-space: nowrap;
         margin: 0;

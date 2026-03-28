@@ -699,16 +699,6 @@ body {
   transition-delay: 0;
 }
 
-.reveal-img {
-  opacity: 0;
-  transform: scale(0.95);
-  transition: opacity 2s ease-out, transform 2s ease-out;
-}
-.reveal-img .reveal-img.activo {
-  opacity: 1;
-  transform: scale(1);
-}
-
 @keyframes scrollAnim {
   0% {
     transform: rotate(45deg) translate(0, 0);

@@ -861,6 +861,37 @@ body{
 }
 
 //====================================================
+//  Animaciones para texto
+//====================================================
+.reveal{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.6s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 1.6s cubic-bezier(0.22, 1, 0.36, 1);
+
+    &.activo{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    p{
+        transition-delay: 0;
+    }
+}
+
+.reveal-img{
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 2s ease-out,
+                transform 2s ease-out;
+
+    .reveal-img.activo{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+//====================================================
 //  Animaciones
 //====================================================
 @keyframes scrollAnim{

@@ -158,3 +158,21 @@ SobresNota.addEventListener("click", (e) => {
 CerrarNota.addEventListener("click", () => {
   SobresNota.classList.remove("activo");
 });
+
+// ============ Animacion de texto al hacer scroll ============
+document.addEventListener("DOMContentLoaded", () => {
+    const elementos = document.querySelectorAll(".reveal, .reveal-img");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("activo");
+                observer.unobserve(entry.target); // solo animar una vez
+            }
+        });
+    }, {
+        threshold: 0.05
+    });
+
+    elementos.forEach(el => observer.observe(el));
+});

@@ -686,6 +686,29 @@ body {
   margin: -30px 0 0;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.6s cubic-bezier(0.22, 1, 0.36, 1), transform 1.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.activo {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal p {
+  transition-delay: 0;
+}
+
+.reveal-img {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 2s ease-out, transform 2s ease-out;
+}
+.reveal-img .reveal-img.activo {
+  opacity: 1;
+  transform: scale(1);
+}
+
 @keyframes scrollAnim {
   0% {
     transform: rotate(45deg) translate(0, 0);

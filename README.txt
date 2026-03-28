@@ -15,4 +15,5 @@
 15. Mesa de regalos
 16. Confirmacion por formulario (Lista de confirmados por excel)
 17. Linea de tiempo
-18. Pie de pagina
+18. Animacion en texto y imagenes
+19. Pie de pagina

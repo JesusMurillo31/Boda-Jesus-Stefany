@@ -97,7 +97,7 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transform: scale(1.05);
+  transform: scale(1);
   animation: zoomPortada 25s ease-in-out infinite alternate;
 }
 .Imagen_Cabezera .overlay {
@@ -714,10 +714,10 @@ body {
 }
 @keyframes zoomPortada {
   from {
-    transform: scale(1.05);
+    transform: scale(1);
   }
   to {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 }
 @media (min-width: 901px) {

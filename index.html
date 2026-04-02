@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Boda de Jesus & Stefany</title> <!--Titulo de la pagina -->
+        <!-- Titulo de la pagina -->
+        <title>Boda de Jesus & Stefany</title>
 
-        <link rel="stylesheet" href="Diseno.css"> <!--diseño.css estilos para la pagina -->
-        <script src="script.js" defer></script> <!--script.js codigo para la pagina -->
+        <!-- Diseño.css estilos para la pagina -->
+        <link rel="stylesheet" href="Diseno.css">
+        
+        <!-- Script.js codigo para la pagina -->
+        <script src="script.js" defer></script>
+
+        <!-- Link para coneccion de API´s y github -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Fredoka+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet"> <!-- API para fuente Allura -->
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet"> <!-- API para fuente Cormorant Garamond -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Fredoka+One&display=swap" rel="stylesheet"> <!-- API para fuente Great Vibes -->
         <link rel="icon" href="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Novios/Novios_2_300x450.png" sizes="32x32">
 
+        <!-- Metadatos para estetica en navegadores/link/url -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#C8A165">
         <meta property="og:title" content="Boda de Jesus & Stefany">
         <meta property="og:description" content="Nuestra historia continúa… y queremos que seas parte de este capítulo.">
         <meta property="og:image" content="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Novios/Novios_2_300x450.png"> <!--Cambiar despues por imagenes de nuestra boda al civil-->
+        <meta property="og:site_name" content="Boda de Jesús & Stefany">
         <meta property="og:image:width" content="800">
         <meta property="og:image:height" content="800">
         <meta property="og:url" content="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/">
-        <meta property="og:type" content="article">
+        <meta property="og:type" content="website">
+        <meta name="twitter:title" content="Boda de Jesús & Stefany">
         <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:description" content="Nuestra historia continúa… y queremos que seas parte de este capítulo.">
+        <meta name="twitter:image" content="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Novios/Novios_2_300x450.png">
         <meta name="twitter:label1" content="Tiempo de lectura">
         <meta name="twitter:data1" content="6 minutos">
+        <meta property="og:locale" content="es_MX">
     </head>
     <body>
+        <!------------------------------------------>
+        <!-- Bienvenida -->
+        <!------------------------------------------>
         <div id="Bienvenida">
             <div class="modal-bienvenida">
                 <h2>Nuestra boda</h2>
@@ -36,37 +52,44 @@
             </div>
         </div>
 
-            <!-- Imagen de la portada -->
-            <div class="Imagen_Cabezera">
-                <img src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Novios/Novios_2_300x450.png" class="foto-portada" alt="Novios" loading="lazy">
+        <!------------------------------------------>
+        <!-- Imagen de portada -->
+        <!------------------------------------------>
+        <div class="Imagen_Cabezera">
+            <img src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Novios/Novios_2_300x450.png" class="foto-portada" alt="Novios" loading="lazy">
             
-                <div class="overlay"></div>
+            <div class="overlay"></div>
 
-                <!-- Titulo -->
-                <div class="Titulo_Cabezera">
-                    <h1>Nuestra Boda</h1>
-                    <p>J & S</p>
+            <!------------------------------------------>
+            <!-- Titulo de portada -->
+            <!------------------------------------------>
+            <div class="Titulo_Cabezera">
+                <h1>Nuestra Boda</h1>
+                <p>J & S</p>
 
-                    <div class="scroll-indicator">
-                        <h2>¡Desliza!</h2>
-                        <span></span>
-                        <span></span>
-                    </div>
+                <!-- Indicador de Scroll -->
+                <div class="scroll-indicator">
+                    <h2>¡Desliza!</h2>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
+        </div>
 
-            <!-- Cuenta Regresiva -->
-            <section class="section contador-wrapper" aria-labelledby="ttl-contador">
-                <h2 id="ttl-contador">¡Para el gran dia faltan!</h2>
+        <!------------------------------------------>
+        <!-- Cuenta regresiva para el evento -->
+        <!------------------------------------------>
+        <section class="section contador-wrapper" aria-labelledby="ttl-contador">
+            <h2 id="ttl-contador">¡Para el gran dia faltan!</h2>
 
-                <!-- Contador -->
-                <div id="contador"
-                    class="contador"
-                    role="timer"
-                    aria-live="polite"
-                    data-fecha="2026-12-18"
-                    data-hora="16:00"
-                    data-zona="local">
+            <!-- Contador -->
+            <div id="contador"
+                class="contador"
+                role="timer"
+                aria-live="polite"
+                data-fecha="2026-12-18"
+                data-hora="16:00"
+                data-zona="local">
             
                     <!-- Bloque Dias -->
                     <div class="bloque">
@@ -91,14 +114,40 @@
                         <span class="valor" id="cd-s">--</span>
                         <small>Seg</small>
                     </div>
+=======
+                <!-- Bloque Dias -->
+                <div class="bloque">
+                    <span class="valor" id="cd-d">--</span>
+                    <small>Días</small>
+>>>>>>> a8a238d1696ee275a639cd9da7704f962c802b45
                 </div>
-            </section>
-
+                
+                <!-- Bloque Horas -->
+                <div class="bloque">
+                    <span class="valor" id="cd-h">--</span>
+                    <small>Horas</small>
+                </div>
+                
+                <!-- Bloque Minutos -->
+                <div class="bloque">
+                    <span class="valor" id="cd-m">--</span>
+                    <small>Min</small>
+                </div>
+                
+                <!-- Bloque Segundos -->
+                <div class="bloque">
+                    <span class="valor" id="cd-s">--</span>
+                    <small>Seg</small>
+                </div>
+            </div>
+            
             <!-- Mensaje cuando llegue el gran día -->
             <p id="contador-msg" class="contador-msg" hidden>¡Llegó nuestro gran día! 💍🎉</p>
         </section>
 
+        <!---------------------------------------------->
         <!-- Mensaje de los novios para los invitados -->
+        <!---------------------------------------------->
         <section class="Mensaje_de_los_novios reveal">
             <p>En compañia de nuestra familia queremos compartir con ustedes la union de nuestro amor eterno.</p>
             <p>18 de diciembre de 2026</p>
@@ -113,12 +162,14 @@
             <span class="linea"></span>
         </div>
 
-        <!-- Novios -->
+        <!------------------------------------------>
+        <!-- Presentacion de los novios -->
+        <!------------------------------------------>
         <section class="Novios reveal">
-        <img class="Logo_Boda" src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Iconos/Icono_Logo_Boda.png" alt="Logo_Boda" loading="lazy">
-            <h2>Novios</h2>
-            <p>Jesus Angel Murillo Gonzalez</p>
-            <p>Stefany Janeth Arias Loera</p>
+            <img class="Logo_Boda" src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Iconos/Icono_Logo_Boda.png" alt="Logo_Boda" loading="lazy">
+                <h2>Novios</h2>
+                <p>Jesus Angel Murillo Gonzalez</p>
+                <p>Stefany Janeth Arias Loera</p>
         </section>
 
         <!-- Linea divisora con corazon -->
@@ -130,8 +181,11 @@
             <span class="linea"></span>
         </div>
 
-        <!-- Seccion Padres de los novios -->
+        <!---------------------------------------------->
+        <!-- Presentacion de los padres de los novios -->
+        <!---------------------------------------------->
         <div class="Padres reveal">
+            <!-- Icono de novio -->
             <div class="Imagen_Novio">
                 <img src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Iconos/Icono_Novio.png" alt="Imagen_Novio" loading="lazy">
             </div>
@@ -143,6 +197,7 @@
                 <p>Dora Elizabet Gonzales Mota</p>
             </section>
 
+            <!-- Icono de novia -->
             <div class="Imagen_Novia">
                 <img src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Iconos/Icono_Novia.png" alt="Imagen_Novia" loading="lazy">
             </div>
@@ -164,7 +219,11 @@
             <span class="linea"></span>
         </div>
 
+        <!-------------------------------------------->
+        <!-- Presentacion de padrinos de los novios -->
+        <!-------------------------------------------->
         <div class="Padrinos reveal">
+            <!-- Padrinos de velacion -->
             <section class="Padrinos_Velacion reveal">
                 <img src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Iconos/Icono_Velacion.png" class="Icono_Velacion" loading="lazy">
                 
@@ -173,6 +232,7 @@
                 <p>María del Socorro Loera Gutierrez</p>
             </section>
 
+            <!-- Padrinos de lazo -->
             <section class="Padrinos_Lazo reveal">
                 <img src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Iconos/Icono_Lazo.png" class="Icono_Lazo" loading="lazy">
 
@@ -191,7 +251,9 @@
             <span class="linea"></span>
         </div>
 
-        <!-- Galeria -->
+        <!-------------------------------------------->
+        <!-- Galeria de fotos tipo slide -->
+        <!-------------------------------------------->
         <section class="Galeria reveal">
             <h2>Nuestros Momentos</h2>
             
@@ -219,33 +281,31 @@
             <span class="linea"></span>
         </div>
 
-        <!-- Detalles del evento -->
+        <!-------------------------------------------->
+        <!-- Seccion de detalles del evento -->
+        <!-------------------------------------------->
         <section class="section reveal">
             <h2>Detalles del Evento</h2>
 
-            <!-- Seccion iglesia -->
+            <!-- Seccion ceremonia -->
             <div class="evento reveal">
                 <img src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Eventos/Ceremonia.jpg" class="Imagen_Ceremonia" loading="lazy">
                 <img src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Iconos/Icono_Iglesia.png" class="Icono_Iglesia" loading="lazy">
                 <h3>Iglesia</h3>
-
                 <p>Parroquia San Pedro Apostol</p>
                 <p>Guillermo Prieto 60, Centro, 45500 San Pedro Tlaquepaque, Jal.</p>
                 <p>Hora de la misa: 4:00 PM</p>
-
                 <a class="boton" href="https://maps.app.goo.gl/L3aadSs4Lb7kSXg1A" target="_blank">Ver ubicación</a>
             </div>
 
-            <!-- Seccion casino -->
+            <!-- Seccion recepcion -->
             <div class="evento reveal">
                 <img src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Eventos/Recepcion.jpg" class="Imagen_Recepcion" loading="lazy">
                 <img src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Iconos/Icono_Anillos.png" class="Icono_Casino" loading="lazy">
                 <h3>Recepción Casino</h3>
-
                 <p>Gran Salon 3 Soles</p>
                 <p>C. Francisco I. Madero 318, Tonala Centro, 45400 Tonala, Jal.</p>
                 <p>Hora: 7:00 PM</p>
-                
                 <a class="boton" href="https://maps.app.goo.gl/s5nSYLFpTTE2Kg3K7" target="_blank">Ver ubicación</a>
             </div>
             
@@ -253,10 +313,8 @@
             <div class="evento reveal">
                 <img src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Iconos/Icono_Vestimenta.png" class="Icono_Vestimenta" loading="lazy">
                 <h3>Codigo de vestimenta</h3>
-
                 <p>Formal</p>
                 <p>¡No utilizar color blanco, ni verde olivo!</p>
-
             </div>
         </section>
 
@@ -269,10 +327,14 @@
             <span class="linea"></span>
         </div>
 
+        <!-------------------------------------------->
+        <!-- Mesa de regalos -->
+        <!-------------------------------------------->
         <div class="Mesa_De_Regalos reveal">
             <h2>Mesa de Regalos</h2>
             <p>Tu presencia es el mejor regalo que podríamos recibir, pero si deseas obsequiarnos algo, te sugerimos los siguientes regalos.</p>
 
+            <!-- Mesa de regalos Liverpool -->
             <div class="Regalos reveal">
                 <section class="Liverpool reveal">
                     <img src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Iconos/Icono_Liverpool.png" class="Icono_Liverpool" loading="lazy">
@@ -280,11 +342,13 @@
                     <a class="boton" href="" target="_blank">Ver regalos</a>
                 </section>
 
+                <!-- Mesa de regalos lluvia de sobres -->
                 <section class="Sobres reveal">
                     <img src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Iconos/Icono_Sobres.png" class="Icono_Sobres" loading="lazy">
                     <p>Lluvia de sobres</p>
+                    <button class="botonSobres">¿Que es?</button>
                     
-                    <button class="botonSobres reveal">¿Que es?</button>
+                    <!-- Ventana de que es de sobres -->
                     <div id="SobresNota" class="Ventana">
                         <div class="VentanaContenido">
                             <span class="CerrarNota"> &times; </span>
@@ -304,19 +368,21 @@
             <span class="linea"></span>
         </div>
 
-        <!-- Confirmacion -->
-        <section class="Confirmacion reveal">
-            <h2>Confirma tu asistencia</h2>
-            <p>Nos encantaría contar con tu presencia en este día tan especial.</p>
-            <p>Por favor confirma antes del 1 de octubre de 2026.</p>
+        <!-------------------------------------------->
+        <!-- Seccion de confirmacion para invitados -->
+        <!-------------------------------------------->
+        <section class="Confirmacion">
+            <h2 class="reveal">Confirma tu asistencia</h2>
+            <p class="reveal">Nos encantaría contar con tu presencia en este día tan especial.</p>
+            <p class="reveal">Por favor confirma antes del 1 de octubre de 2026.</p>
 
+            <!-- Boton de confirmacion -->
             <a class="boton" onclick="abrirFormulario()">Reservar mi lugar</a>
 
+            <!-- Abre el formulario para invitados -->
             <div id = "modalFormulario" class = "modal">
                 <div class="modal-contenido">
-
-                    <span class="cerrar" onclick="cerrarFormulario()">×</span>
-
+                    <span class="cerrar" onclick="cerrarFormulario(event)">×</span>
                     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe1mG49bYEOPhsWAVk-fzacJgG8TvJGEZHB9ITdCN88bsIWwQ/viewform?embedded=true" 
                         class="formulario-iframe"
                         frameborder="0" 
@@ -336,16 +402,18 @@
             <span class="linea"></span>
         </div>
 
-        <!-- Linea del tiempo -->
+        <!-------------------------------------------->
+        <!-- Linea de tiempo de los novios -->
+        <!-------------------------------------------->
         <section class="Linea_Tiempo reveal">
             <h2>Nuestra Historia</h2>
 
             <!-- Primera fecha -->
             <div class="Fecha reveal">   
                 <span class="Linea"></span>
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="#555">
-                        <path d="M12 21s-6-4.35-9-7.5C-1 9.5 2 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3C22 4 25 9.5 21 13.5 18 16.65 12 21 12 21z"/>
-                    </svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#555">
+                    <path d="M12 21s-6-4.35-9-7.5C-1 9.5 2 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3C22 4 25 9.5 21 13.5 18 16.65 12 21 12 21z"/>
+                </svg>
             </div>
 
             <div class="Contenido reveal">
@@ -356,9 +424,9 @@
             <!-- Segunda fecha -->
             <div class="Fecha reveal">   
                 <span class="Linea"></span>
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="#555">
-                        <path d="M12 21s-6-4.35-9-7.5C-1 9.5 2 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3C22 4 25 9.5 21 13.5 18 16.65 12 21 12 21z"/>
-                    </svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#555">
+                    <path d="M12 21s-6-4.35-9-7.5C-1 9.5 2 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3C22 4 25 9.5 21 13.5 18 16.65 12 21 12 21z"/>
+                </svg>
             </div>
 
             <div class="Contenido reveal">
@@ -369,9 +437,9 @@
             <!-- Tercera fecha -->
             <div class="Fecha reveal">   
                 <span class="Linea"></span>
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="#555">
-                        <path d="M12 21s-6-4.35-9-7.5C-1 9.5 2 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3C22 4 25 9.5 21 13.5 18 16.65 12 21 12 21z"/>
-                    </svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#555">
+                    <path d="M12 21s-6-4.35-9-7.5C-1 9.5 2 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3C22 4 25 9.5 21 13.5 18 16.65 12 21 12 21z"/>
+                </svg>
             </div>
 
             <div class="Contenido reveal">
@@ -382,9 +450,9 @@
             <!-- Cuarta fecha -->
             <div class="Fecha reveal">   
                 <span class="Linea"></span>
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="#555">
-                        <path d="M12 21s-6-4.35-9-7.5C-1 9.5 2 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3C22 4 25 9.5 21 13.5 18 16.65 12 21 12 21z"/>
-                    </svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#555">
+                    <path d="M12 21s-6-4.35-9-7.5C-1 9.5 2 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3C22 4 25 9.5 21 13.5 18 16.65 12 21 12 21z"/>
+                </svg>
             </div>
 
             <div class="Contenido reveal">
@@ -395,9 +463,9 @@
             <!-- Quinta fecha -->
             <div class="Fecha reveal">   
                 <span class="Linea"></span>
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="#555">
-                        <path d="M12 21s-6-4.35-9-7.5C-1 9.5 2 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3C22 4 25 9.5 21 13.5 18 16.65 12 21 12 21z"/>
-                    </svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#555">
+                    <path d="M12 21s-6-4.35-9-7.5C-1 9.5 2 4 6.5 4c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3C22 4 25 9.5 21 13.5 18 16.65 12 21 12 21z"/>
+                </svg>
             </div>
 
             <div class="Contenido reveal">
@@ -406,15 +474,22 @@
             </div>
         </section>
 
+        <!-------------------------------------------->
         <!-- Boton de musica -->
+        <!-------------------------------------------->
+        
+        <!-- Cancion a reproducir -->
         <audio id="musica">
             <source src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/Musica/Veo en ti la luz (Piano Version) - Volumen Bajo.mp3" type="audio/mpeg">
             <source src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/Musica/Veo en ti la luz (Piano Version) - Volumen Bajo.ogg" type="audio/ogg">
         </audio>
-
+        
+        <!-- Boton para la musica -->
         <button id="botonMusica" onclick="toggleMusica()"> Reproducir </button>
 
-        <!-- Pie de pagina -->
+        <!------------------------------------------------------>
+        <!-- Pie de pagina con nombre de los novios mas marca -->
+        <!------------------------------------------------------>
         <footer class="Pie_de_pagina reveal">
             <p>Jesus & Stefany</p>
             <p>18 . Diciembre . 2026</p>

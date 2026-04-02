@@ -149,7 +149,8 @@ function abrirFormulario(){
 // ==============================================================
 // ====== Cerrar formulario para confirmacion de invitados ======
 // ==============================================================
-function cerrarFormulario(){
+function cerrarFormulario(event){
+  if(event) event.stopPropagation(); // Evita que el clic se propague al modal
     const modal = document.getElementById('modalFormulario');
     modal.classList.remove('activo');
 }

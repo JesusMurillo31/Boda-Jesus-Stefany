@@ -321,7 +321,7 @@
                 <section class="Sobres reveal">
                     <img src="https://jesusmurillo31.github.io/Boda-Jesus-Stefany/images/Iconos/Icono_Sobres.png" class="Icono_Sobres" loading="lazy">
                     <p>Lluvia de sobres</p>
-                    <button class="botonSobres reveal">¿Que es?</button>
+                    <button class="botonSobres">¿Que es?</button>
                     
                     <!-- Ventana de que es de sobres -->
                     <div id="SobresNota" class="Ventana">
@@ -346,10 +346,10 @@
         <!-------------------------------------------->
         <!-- Seccion de confirmacion para invitados -->
         <!-------------------------------------------->
-        <section class="Confirmacion reveal">
-            <h2>Confirma tu asistencia</h2>
-            <p>Nos encantaría contar con tu presencia en este día tan especial.</p>
-            <p>Por favor confirma antes del 1 de octubre de 2026.</p>
+        <section class="Confirmacion">
+            <h2 class="reveal">Confirma tu asistencia</h2>
+            <p class="reveal">Nos encantaría contar con tu presencia en este día tan especial.</p>
+            <p class="reveal">Por favor confirma antes del 1 de octubre de 2026.</p>
 
             <!-- Boton de confirmacion -->
             <a class="boton" onclick="abrirFormulario()">Reservar mi lugar</a>
@@ -357,7 +357,7 @@
             <!-- Abre el formulario para invitados -->
             <div id = "modalFormulario" class = "modal">
                 <div class="modal-contenido">
-                    <span class="cerrar" onclick="cerrarFormulario()">×</span>
+                    <span class="cerrar" onclick="cerrarFormulario(event)">×</span>
                     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe1mG49bYEOPhsWAVk-fzacJgG8TvJGEZHB9ITdCN88bsIWwQ/viewform?embedded=true" 
                         class="formulario-iframe"
                         frameborder="0" 

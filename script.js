@@ -142,14 +142,16 @@ function moverSlide(direccion){
 // ====== Abrir formulario para confirmacion de invitados ======
 // =============================================================
 function abrirFormulario(){
-    document.getElementById("modalFormulario").classList.add("activo");
+    const modal = document.getElementById('modalFormulario');
+    modal.classList.add('activo');
 }
 
 // ==============================================================
 // ====== Cerrar formulario para confirmacion de invitados ======
 // ==============================================================
 function cerrarFormulario(){
-    document.getElementById("modalFormulario").classList.remove("activo");
+    const modal = document.getElementById('modalFormulario');
+    modal.classList.remove('activo');
 }
 
 // ==========================================================

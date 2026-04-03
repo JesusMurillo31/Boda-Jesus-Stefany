@@ -596,7 +596,7 @@ body {
   padding: 0;
   width: 95%;
   max-width: 700px;
-  height: auto;
+  height: 95%;
   max-height: 90vh;
   border-radius: 10px;
   overflow: hidden;
@@ -804,7 +804,8 @@ body {
        object-fit: cover;
   }
   .modal-contenido {
-    width: 95%;
+    width: 98%;
+    height: 98%;
     max-height: 85vh;
     padding: 10px;
   }

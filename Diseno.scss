@@ -68,10 +68,6 @@ $shadow-titulo-movil: 3px 3px 0 $color-negro;
     }
 }
 
-body.modal-activo{
-    overflow: hidden;
-}
-
 // ================================================
 // Body / Cuerpo
 // ================================================
@@ -615,30 +611,37 @@ body{
 //  Ventana (Sobres)
 //====================================================
 .Ventana{
+    position: fixed;
+    inset: 0;
     display: none;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
     justify-content: center;
     align-items: center;
-    position:   fixed;
+    background: rgba(0, 0, 0, 0.75);
     z-index: 9999;
-    background: rgba(0, 0, 0, 0.6);
+    height: 100dvh;
     padding: 20px;
-    overflow-y: auto;
 
     .VentanaContenido{
-        position: relative;
         background: $color-blanco;
-        width: 90%;
-        max-width: 500px;
-        max-height: 80vh;
-        padding: 30px;
+        width: 100%;
+        max-width: 420px;
+        margin: 0;
+        padding: 25px 20px 20px 20px;
         border-radius: 10px;
-        text-align: center;
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        box-sizing: border-box;
+        max-height: 80vh;
         overflow-y: auto;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+
+        p{
+            font-family: $font-texto;
+            font-size: $size-texto;
+            margin: 25px;
+        }
     }
 
     &.activo{
@@ -650,11 +653,9 @@ body{
     .CerrarNota{
         position: absolute;
         top: 10px;
-        right: 15px;
-        font-size: 28px;
+        right: 12px;
+        font-size: 30px;
         cursor: pointer;
-        z-index: 10;
-        line-height: 1;
     }
 }
 
@@ -884,6 +885,10 @@ body{
     transform: translateY(30px);
     transition: opacity 1.6s cubic-bezier(0.22, 1, 0.36, 1),
                 transform 1.6s cubic-bezier(0.22, 1, 0.36, 1);
+
+    &.inicial{
+        transform: translateY(40px) scale(0.98);
+    }
 
     &.activo{
         opacity: 1;

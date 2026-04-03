@@ -164,19 +164,19 @@ const CerrarNota = SobresNota.querySelector(".CerrarNota");
 
 botonSobres.addEventListener("click", () => {
   SobresNota.classList.add("activo");
-  document.body.classList.add("modal-activo");
+  document.body.classList.add("modal-open");
 });
 
 SobresNota.addEventListener("click", (e) => {
   if (!e.target.closest(".VentanaContenido")) {
     SobresNota.classList.remove("activo");
-    document.body.classList.remove("modal-activo");
+    document.body.classList.remove("modal-open");
   }
 });
 
 CerrarNota.addEventListener("click", () => {
   SobresNota.classList.remove("activo");
-  document.body.classList.remove("modal-activo");
+  document.body.classList.remove("modal-open");
 });
 
 document.addEventListener("keydown", (e) => {
@@ -189,19 +189,20 @@ document.addEventListener("keydown", (e) => {
 // ================================================
 // ====== Animacion de texto al hacer scroll ======
 // ================================================
-document.addEventListener("DOMContentLoaded", () => {
-    const elementos = document.querySelectorAll(".reveal, .reveal-img");
+const elementosReveal = document.querySelectorAll(".reveal");
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("activo");
-                observer.unobserve(entry.target); // solo animar una vez
-            }
-        });
-    }, {
-        threshold: 0.05
-    });
+const mostrarElementos = () => {
+  const trigger = window.innerHeight * 0.85;
 
-    elementos.forEach(el => observer.observe(el));
-});
+  elementosReveal.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+
+    if (top < trigger) {
+      el.classList.add("activo");
+      el.classList.remove("inicial");
+    }
+  });
+};
+
+window.addEventListener("scroll", mostrarElementos);
+window.addEventListener("load", mostrarElementos);

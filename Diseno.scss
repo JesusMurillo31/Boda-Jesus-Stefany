@@ -567,16 +567,35 @@ body{
         font-size: $size-texto;
         margin-top: 0;
     }
+}
 
-    .Regalos{
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 40px;
-        flex-wrap: wrap
+.Regalos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    .Liverpool{
+        flex: 1 1 250px;
+        max-width: 300px;
+
+        p{
+            font-family: $font-texto;
+            font-size: $size-texto;
+            margin-top: 0;
+        }
+
+        .Icono_Liverpool{
+            display: flex;
+            width: 180px;
+            height: auto;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            border: 1px solid $color-negro;
+        }
     }
 
-    .Liverpool,
     .Sobres{
         flex: 1 1 250px;
         max-width: 300px;
@@ -586,26 +605,16 @@ body{
             font-size: $size-texto;
             margin-top: 0;
         }
-    }
 
-    .Icono_Liverpool{
-        display: flex;
-        width: 180px;
-        height: auto;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        border: 1px solid $color-negro;
-    }
-
-    .Icono_Sobres{
-        display: flex;
-        width: 180px;
-        height: auto;
-        margin: 0 auto;
-        margin-top: 20px;
+        .Icono_Sobres{
+            display: flex;
+            width: 180px;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
     }
 }
-
 
 //====================================================
 //  Ventana (Sobres)

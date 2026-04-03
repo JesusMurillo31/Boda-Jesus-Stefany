@@ -445,25 +445,24 @@ body {
   font-size: 25px;
   margin-top: 0;
 }
-.Mesa_De_Regalos .Regalos {
+
+.Regalos {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
   flex-wrap: wrap;
 }
-.Mesa_De_Regalos .Liverpool,
-.Mesa_De_Regalos .Sobres {
+.Regalos .Liverpool {
   flex: 1 1 250px;
   max-width: 300px;
 }
-.Mesa_De_Regalos .Liverpool p,
-.Mesa_De_Regalos .Sobres p {
+.Regalos .Liverpool p {
   font-family: "Cormorant Garamond", serif;
   font-size: 25px;
   margin-top: 0;
 }
-.Mesa_De_Regalos .Icono_Liverpool {
+.Regalos .Liverpool .Icono_Liverpool {
   display: flex;
   width: 180px;
   height: auto;
@@ -471,7 +470,16 @@ body {
   margin-bottom: 20px;
   border: 1px solid #000;
 }
-.Mesa_De_Regalos .Icono_Sobres {
+.Regalos .Sobres {
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+.Regalos .Sobres p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin-top: 0;
+}
+.Regalos .Sobres .Icono_Sobres {
   display: flex;
   width: 180px;
   height: auto;

@@ -164,16 +164,26 @@ const CerrarNota = SobresNota.querySelector(".CerrarNota");
 
 botonSobres.addEventListener("click", () => {
   SobresNota.classList.add("activo");
+  document.body.classList.add("modal-activo");
 });
 
 SobresNota.addEventListener("click", (e) => {
-  if (e.target === SobresNota) {
+  if (!e.target.closest(".VentanaContenido")) {
     SobresNota.classList.remove("activo");
+    document.body.classList.remove("modal-activo");
   }
 });
 
 CerrarNota.addEventListener("click", () => {
   SobresNota.classList.remove("activo");
+  document.body.classList.remove("modal-activo");
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    SobresNota.classList.remove("activo");
+    document.body.classList.remove("modal-activo");
+  }
 });
 
 // ================================================

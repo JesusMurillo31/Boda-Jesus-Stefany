@@ -616,25 +616,29 @@ body{
 //====================================================
 .Ventana{
     display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     position:   fixed;
-    inset: 0;
-    z-index: 2500;
+    z-index: 9999;
     background: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    isolation: isolate;
+    padding: 20px;
+    overflow-y: auto;
 
     .VentanaContenido{
         position: relative;
         background: $color-blanco;
-        margin: auto;
-        padding: 30px 20px;
         width: 90%;
-        max-width: 480px;
+        max-width: 500px;
         max-height: 80vh;
-        overflow-y: auto;
+        padding: 30px;
         border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        overflow-y: auto;
     }
 
     &.activo{
@@ -1004,9 +1008,16 @@ body{
         padding: 10px;
     }
 
+    // Ventana de sobres (luz de ventana)
+    .Ventana .VentanaContenido{
+        width: 95vw;
+        max-width: 95vw;
+        padding: 0px;
+    }
+
     // Formulario
     .formulario-iframe{
-        height: 70vh;
+        height: 90vh;
     }
 
     // Contador

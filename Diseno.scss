@@ -41,7 +41,7 @@ $shadow-titulo-movil: 3px 3px 0 $color-negro;
         position: absolute;
         top: 28%;
         left: 35%;
-        width: clamp(55px, 8vw, 85px);
+        width: clamp(58px, 8vw, 88px);
         height: auto;
         z-index: 2;
     }
@@ -49,13 +49,13 @@ $shadow-titulo-movil: 3px 3px 0 $color-negro;
     h1{
         font-family: $font-titulos;
         font-size: $size-titulos;
-        margin-bottom: 25px;
+        margin-bottom: -30px;
     }
 
     h2{
         font-family: $font-titulos;
         font-size: $size-titulos;
-        margin-bottom: 5px;
+        margin-bottom: 0;
     }
 
     p{
@@ -970,8 +970,14 @@ body{
 @media (max-width: 600px){
     // Bienvenida    
     .modal-bienvenida{
-        padding: 25px 20px;
+        padding: 0 40px 20px;
         max-width: 300px;
+
+        .Sello{
+            top: 27%;
+            left: 7%;
+            width: clamp(40px, 15vw, 60px);
+        }
 
         h2{
             font-size: 50px;

@@ -21,19 +21,19 @@
   position: absolute;
   top: 28%;
   left: 35%;
-  width: clamp(55px, 8vw, 85px);
+  width: clamp(58px, 8vw, 88px);
   height: auto;
   z-index: 2;
 }
 .modal-bienvenida h1 {
   font-family: "Great Vibes", cursive;
   font-size: 45px;
-  margin-bottom: 25px;
+  margin-bottom: -30px;
 }
 .modal-bienvenida h2 {
   font-family: "Great Vibes", cursive;
   font-size: 45px;
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 .modal-bienvenida p {
   font-family: "Cormorant Garamond", serif;
@@ -770,8 +770,13 @@ body {
 }
 @media (max-width: 600px) {
   .modal-bienvenida {
-    padding: 25px 20px;
+    padding: 0 40px 20px;
     max-width: 300px;
+  }
+  .modal-bienvenida .Sello {
+    top: 27%;
+    left: 7%;
+    width: clamp(40px, 15vw, 60px);
   }
   .modal-bienvenida h2 {
     font-size: 50px;

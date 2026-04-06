@@ -139,16 +139,13 @@ function moverSlide(direccion){
 })();
 
 // =============================================================
-// ====== Abrir formulario para confirmacion de invitados ======
+// ========= formulario para confirmacion de invitados =========
 // =============================================================
 function abrirFormulario(){
     const modal = document.getElementById('modalFormulario');
     modal.classList.add('activo');
 }
 
-// ==============================================================
-// ====== Cerrar formulario para confirmacion de invitados ======
-// ==============================================================
 function cerrarFormulario(event){
   if(event) event.stopPropagation(); // Evita que el clic se propague al modal
     const modal = document.getElementById('modalFormulario');

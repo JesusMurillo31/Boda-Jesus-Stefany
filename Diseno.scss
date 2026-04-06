@@ -39,9 +39,9 @@ $shadow-titulo-movil: 3px 3px 0 $color-negro;
 
     .Sello{
         position: absolute;
-        top: -18px;
-        left: -18px;
-        width: clamp(55px, 8vw, 85px);
+        top: 18px;
+        left: 18px;
+        width: 10px;
         height: auto;
         z-index: 2;
     }

@@ -37,6 +37,15 @@ $shadow-titulo-movil: 3px 3px 0 $color-negro;
     max-width: 400px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 
+    .Sello{
+        position: absolute;
+        top: -18px;
+        left: -18px;
+        width: clamp(55px, 8vw, 85px);
+        height: auto;
+        z-index: 2;
+    }
+
     h1{
         font-family: $font-titulos;
         font-size: $size-titulos;
